@@ -1,0 +1,1981 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class=" no-js" lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <!-- Start SEO custom tags -->
+<meta name="robots" content="noarchive,noindex,nofollow,NOODP" />
+<meta name="description" content="We examine the cross-sectional pricing equation of the APT using the elements of eigenvectors and the maximum likelihood factor loadings of the covariance matri..." />
+<meta property="og:description" content="We examine the cross-sectional pricing equation of the APT using the elements of eigenvectors and the maximum likelihood factor loadings of the covariance matri..." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<!-- End SEO custom tags -->
+
+        <script src="//assets.adobedtm.com/e0b918adcf7233db110ce33e1416a2e6448e08e6/satelliteLib-5c3c84854607a1fc3328b9b539472ebd81244f0b.js"></script>
+
+        
+
+        <meta name="viewport" content="width=device-width" />
+
+        
+        
+        <meta name="ST.publisher" content="Wiley" />
+    
+
+    
+        <meta name="ST.desc" content="ARCHIVE" />
+    
+
+    
+        <meta name="ST.printIssn" content="00221082" />
+    
+    
+    
+        <meta name="ST.onlineIssn" content="15406261" />
+    
+    
+    <meta name="ST.PlatformAPIKey" content="83e2edc873d4" />
+    <meta name="ST.discriminator" content="10.2307/2328749" />
+
+
+
+        
+        
+        <link rel="icon" sizes="192x192" type="image/png" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/android-chrome-192x192.png" />
+        <link rel="icon" sizes="512x512" type="image/png" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/android-chrome-512x512.png" />
+
+        
+        <link rel="apple-touch-icon" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/apple-touch-icon.png" />
+
+        
+        <meta name="msapplication-TileImage" content="/assets/mstile-150x150.png" />
+        <meta name="msapplication-TileColor" content="#DA532C" />
+        <meta name="msapplication-config" content="/assets/browserconfig.xml" />
+
+        
+        <link rel="icon" sizes="16x16" type="image/png" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/favicon-16x16.png" />
+        <link rel="icon" sizes="48x48" type="image/png" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/favicon-48x48.png" />
+        <link rel="icon" sizes="32x32" type="image/png" href="//www.jstor.org/assets/global_20171208T1811/build/images/favicons/favicon-32x32.png" />
+        
+
+        
+        <link rel="stylesheet" href="//www.jstor.org/assets/global_20171208T1811/build/global/css/global.css" />
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+        </script>
+
+        
+        
+    <link rel="stylesheet" href="//www.jstor.org/assets/article-view_20171206T1635/build/article-view/css/article-view.css" />
+
+
+        
+    <link rel="canonical" href="http://www.jstor.org/stable/2328749" />
+
+
+        <title>
+    Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors on JSTOR
+</title>
+
+        <script type="text/javascript" class="ddo">
+            var  DDO  = {};
+            DDO.pageData={
+                
+    "pageName" : "article view urp",
+    "pageChannel" : "content:article:pagescan:urp",
+    "pageProduct" : "jstor",
+    "pagePlatform" : "seq"
+
+            };
+            DDO.userData = {
+                
+    "loginStatus" : "false",
+    "userAuthentication" : "Unauthenticated",
+    "userInstitution" : "",
+    "institutionID" : "",
+    "myJstorUserID" : "None"
+
+            };
+            
+
+
+
+DDO.contentData = {
+    "contentName" : "The Journal of Finance",
+    "objectDOI" : "10.2307/2328749",
+    "contentType" : "journal",
+    "contentIssue" : "Vol. 45, No. 5 (Dec., 1990), pp. 1541-1564",
+    "contentPublisher" : "Wiley for the American Finance Association",
+    "contentDiscipline" : "[&#39;Finance&#39;, &#39;Business &amp; Economics&#39;, &#39;Business&#39;]",
+    "openAccess" : "False",
+    "userAuthorization" : "Unauthorized"
+};
+
+
+    DDO.contentData.urpPageType =  "article view urp-rr-jpass-pssarticle";
+
+
+DDO.itemData = {
+    "itemTitle":"Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors",
+    "pageCount":"24",
+    "itemType" : "article"
+};
+
+
+
+
+
+
+
+        </script>
+    </head>
+    <body  onload="validateElementsPresent(); logPerimeterXLoadingErrors();" >
+        
+            <script>
+    var validateElementsPresent = function() {
+        var requiredElementSelectors = ['#px-js', '#px-pixel'];
+
+        requiredElementSelectors.forEach(function(selector){
+            if (!$(selector).length) {
+                storePerimeterXLoadingError(selector, 'element not present');
+            }
+        });
+    }, storePerimeterXLoadingError = function(element, errorType) {
+        if (window.perimeterXLoadingErrors) {
+            if (!window.perimeterXLoadingErrors.hasOwnProperty(element)) {
+                window.perimeterXLoadingErrors[element] = errorType;
+            }
+        } else {
+            window.perimeterXLoadingErrors = {};
+            window.perimeterXLoadingErrors[element] = errorType;
+        }
+    };
+</script>
+
+
+<!-- PerimeterX -->
+<script id="px-js" type="text/javascript">
+    (function(){
+        window._pxAppId = 'PXu4K0s8nX';
+        window._pxRootUrl = '/px/xhr';
+
+        
+        window._pxParam1 = "Unknown Users";
+        
+
+        
+        window._pxParam2 = "journal";
+        
+
+        var p = document.getElementsByTagName('script')[0],
+            s = document.createElement('script');
+        s.async = 1;
+        s.src = '/px/client/main.min.js';
+        s.onerror = function() {
+            storePerimeterXLoadingError('asyncScript', 'element present but not loaded');
+        };
+        p.parentNode.insertBefore(s,p);
+    }());
+</script>
+<div style="position:fixed; top:0; left:0;" width="1" height="1">
+    <img id="px-pixel" aria-hidden="true" src="/px/xhr/api/v1/collector/pxPixel.gif?appId=PXu4K0s8nX" onerror="storePerimeterXLoadingError('pixel', 'element present but not loaded')" alt="">
+</div>
+<noscript>
+    <div style="position:fixed; top:0; left:0;" width="1" height="1">
+        <img id="px-pixel-nojs" aria-hidden="true" src="/px/xhr/api/v1/collector/noScript.gif?appId=PXu4K0s8nX" alt="">
+    </div>
+</noscript>
+<!-- End PerimeterX -->
+
+
+        
+
+        
+
+        
+
+        <div id="skipNav">
+            <a class="visuallyhidden" href="#content">Skip to Main Content</a>
+        </div>
+
+        
+
+        
+
+        
+        
+            
+
+
+
+
+
+<div id="provider-designation-statement" class="mvs txtc" data-qa="pds">
+    
+
+
+
+
+    <em>Have library access?</em>
+    <a href="/institutionSearch?redirectUri=%2Fstable%2Fpdf%2F2328749.pdf">
+        Login Through Your Library
+    </a>
+
+
+
+
+
+
+</div>
+
+<nav>
+    
+    <div class="top-bar ptxs">
+        <div class="top-bar-title">
+            <a href="/" id="menu-jstor-logo">
+                <img src="//www.jstor.org/assets/global_20171208T1811/build/images/jstor-logo.png" srcset="//www.jstor.org/assets/global_20171208T1811/build/images/jstor-logo.png 1x, //www.jstor.org/assets/global_20171208T1811/build/images/jstor-logo@2x.png 2x" class="non-responsive" alt="JSTOR Home" width="65" height="90">
+            </a>
+        </div>
+
+        <div class="nav-main">
+            
+                <div class="top-bar-row show-for-xlarge-up pbm">
+                    <div class="user-account">
+                        
+                            <a href="/action/showLogin?redirectUri=/stable/pdf/2328749.pdf" class="inline-block mtl">Login to My Account</a><i class="nav-separator"></i><a href="/register?redirectUri=/stable/pdf/2328749.pdf">Register</a>
+                        
+                    </div>
+                </div>
+            
+            
+                <div class="top-bar-row">
+                    
+                        <div class="flex-box-main search-container">
+                            <div class="subcontent-search-box">
+                                <form
+    role="form"
+    class="basic-search-form input-search-secondary"
+    action="/action/doBasicSearch"
+    method="GET"
+>
+    
+
+    
+
+    
+
+    <div class="input-group  input-search-select">
+        
+        <input
+            id="q0"
+            title="Search Box"
+            name="Query"
+            type="text"
+            class="searchBox input-group-field mbs small"
+            placeholder="Search JSTOR"
+            
+            
+        />
+        <label for="q0" class="visuallyhidden">Search JSTOR</label>
+
+        
+            <div class="input-group-field select mbs">
+                <label for="QSFSearchFilter" class="visuallyhidden">Filter search by</label>
+                <select name="filter" id="QSFSearchFilter">
+                
+                    <option value="" selected="selected" aria-label="Search All Content">All Content</option>
+                
+                    <option value="iid:10.2307/i340151" aria-label="Search In This Issue">In This Issue</option>
+                
+                    <option value="jid:10.2307/j100221" aria-label="Search In This Journal">In This Journal</option>
+                
+                </select>
+            </div>
+        
+
+        <div class="input-group-button">
+            <button type="submit" title="search button" class="button secondary secondary" data-sc="button:global search">
+                <i class="icon-search" aria-label="Submit search"></i>
+            </button>
+        </div>
+    </div>
+
+    
+</form>
+
+                            </div>
+                        </div>
+                    
+                    <div class="flex-box-main">
+                        <ul class="dropdown menu">
+                            <li class="is-dropdown-submenu-parent show-for-medium-up">
+                                <a href="/action/showAdvancedSearch" id="menu-search" data-qa="hdr-adv-search-top">Advanced Search</a>
+                                <ul class="menu vertical">
+                                    <li><a href="/action/showAdvancedSearch" data-qa="hdr-adv-search">Advanced Search</a></li>
+                                    <li><a href="/analyze" data-qa="hdr-text-analyzer">Text Analyzer</a></li>
+                                </ul>
+                            </li>
+                            <li class="is-dropdown-submenu-parent flex">
+                                <a href="/subjects" id="menu-browse" data-qa="hdr-brs">Browse</a>
+                                <ul class="menu vertical">
+                                    <li><a href="/subjects" data-qa="hdr-brs-by-subj">by Subject</a></li>
+                                    <li><a href="/action/showJournals?browseType=title" data-qa="hdr-brs-by-title">by Title</a></li>
+                                    <li><a href="/publishers" data-qa="hdr-brs-by-pub">by Publisher</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right show-for-xlarge-up">
+                        <a href="//about.jstor.org" target="_blank" title="This link opens in a new window" class="bold" data-qa="hdr-about">About</a>
+                        <a href="//support.jstor.org" target="_blank" title="This link opens in a new window" class="bold mlm" data-qa="hdr-support">Support</a>
+                    </div>
+                    <div class="flex01a hide-for-xlarge-up">
+                        
+                            <a href="/action/showLogin?redirectUri=%2Fstable%2Fpdf%2F2328749.pdf" class="bold">Login</a><i class="nav-separator"></i><a class="bold" href="/register?redirectUri=%2Fstable%2Fpdf%2F2328749.pdf">Register</a>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+
+        <div id="content" role="main" class="content row" data-equalizer>
+            
+    
+
+    
+    
+    
+    
+
+
+    <div class="small-12 xlarge-8 columns column-max-width" data-equalizer-watch>
+        
+    
+
+    <div class="article-view-info">
+        
+    
+        
+<span class="visuallyhidden"><h2>If You Use a Screen Reader</h2>This content is available through Read Online (Free) program, which relies on page scans. Since scans are not currently available to screen readers, please <a href="mailto:support@jstor.org?subject=Accessibility Request: URP and Register+Read DOI: 10.2307/2328749">contact JSTOR User Support for access.</a> We'll provide a PDF copy for your screen reader.</span>
+    
+
+        
+
+
+
+    <div class="row">
+        
+        
+    </div>
+
+
+
+        
+        
+        
+
+<ul class="breadcrumbs ">
+
+    <li class="mts breadcrumb-journal">
+        
+        
+        <a href="/action/showPublication?journalCode=jfinance">The Journal of Finance</a>
+        
+        
+    </li>
+
+    <li class="mts breadcrumb-issue">
+        
+        
+        <a href="/stable/i340151">Vol. 45, No. 5, Dec., 1990</a>
+        
+        
+    </li>
+
+    <li class="mts breadcrumb-article current">
+        
+        
+        Sequential Tests of ...
+        
+        
+    </li>
+
+</ul>
+        
+
+        <div class="row">
+            <div class="small-12 xlarge-9 columns mbm">
+                
+
+
+
+    <div class="row clearfix">
+         <div class="small-12 columns ">
+         
+           
+               
+                <div class="left prl cover-image">
+                    
+
+    <a class="cover-url" href="/action/showPublication?journalCode=jfinance">
+
+    <img class="cover" aria-label="Thumbnail" src="data:image/gif;base64,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" alt="The Journal of Finance">
+
+    </a>
+
+
+                </div>
+                
+            
+         
+             <div class="medium-8 inline-block">
+                 
+    <div class="badge" data-qa="content-type">Journal Article</div>
+    
+        <h1 class="title medium-heading">
+        
+            Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors
+        
+        </h1>
+
+        
+        
+    <div class="contrib">
+        
+Ravi Shukla and Charles Trzcinka
+    </div>
+
+    
+
+    
+        
+
+
+    <div class="journal">
+        <cite>The Journal of Finance</cite>
+    </div>
+
+
+        
+            
+    
+        <div class="src mbl">
+            Vol. 45, No. 5 (Dec., 1990), pp. 1541-1564
+        </div>
+    
+
+        
+        
+
+
+    <div class="publisher">
+        
+        Published by: <a href="/publisher/black" class="publisher-link">Wiley</a> for the <a href="/publisher/afina" class="publisher-link">American Finance Association</a>
+        
+    </div>
+
+        
+    <div class="doi">
+        DOI: 10.2307/2328749
+    </div>
+
+    
+        
+    <div class="stable">
+        Stable URL: http://www.jstor.org/stable/2328749
+    </div>
+
+        
+    <div class="count">
+        Page Count: 24
+    </div>
+
+
+
+
+                 
+
+
+    
+    <div class="topics-list mtl">
+        <p class="hide">You can always find the topics here!</p>
+        <strong>Topics:</strong>
+        
+            <a href="/topic/eigenvectors/" data-sc="text link:topic link">Eigenvectors</a>, 
+        
+            <a href="/topic/systematic-risk/" data-sc="text link:topic link">Systematic risk</a>, 
+        
+            <a href="/topic/covariance-matrices/" data-sc="text link:topic link">Covariance matrices</a>, 
+        
+            <a href="/topic/factor-analysis/" data-sc="text link:topic link">Factor analysis</a>, 
+        
+            <a href="/topic/error-rates/" data-sc="text link:topic link">Error rates</a>, 
+        
+            <a href="/topic/security-prices/" data-sc="text link:topic link">Security prices</a>, 
+        
+            <a href="/topic/arbitrage/" data-sc="text link:topic link">Arbitrage</a>, 
+        
+            <a href="/topic/mathematical-models/" data-sc="text link:topic link">Mathematical models</a>, 
+        
+            <a href="/topic/automatic-picture-transmission/" data-sc="text link:topic link">Automatic picture transmission</a>, 
+        
+            <a href="/topic/pricing/" data-sc="text link:topic link">Pricing</a>
+        
+    </div>
+    
+
+
+                 
+                     <div class="mtl mbl left">
+                        
+
+<div id="thumbs-container" class="inline small-text" aria-live="assertive">
+    <span>Were these topics helpful?</span>
+    <div id="thumbs-forms" class="inline">
+        <form id="thumbs-up-form" class="ajax-form inline" action="/topic/page-feedback" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='b9CeR6Wd3bKuLRGqMJFVSMP6LtVmd2db' />
+            <input type="hidden" name="topic" value="Eigenvectors, Systematic risk, Covariance matrices, Factor analysis, Error rates, Security prices, Arbitrage, Mathematical models, Automatic picture transmission, Pricing" />
+            
+    <input type="hidden" name="item_doi" value="10.2307/2328749" />
+    <input type="hidden" name="item_stable_url" value="/stable/pdf/2328749.pdf" />
+
+
+    <input type="hidden" name="item_title" value="Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors" />
+
+
+    <input type="hidden" name="item_authors" value="Ravi Shukla, Charles Trzcinka" />
+
+
+            <input type="hidden" name="feedback_kind" value="ITEMVIEW" />
+            <input type="hidden" name="feedback_type" value="THMUP" />
+            <input type="hidden" name="institution_name" value="" />
+            <button type="submit" id="feedback_thumbup" class="feedback-button mls txtm">
+                <i class="icon-thumbs-o-up primary-color" aria-label="Thumbs up. These topics are helpful."></i>
+            </button>
+        </form>
+
+        <form id="thumbs-down-form" class="ajax-form inline" action="/topic/page-feedback" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='b9CeR6Wd3bKuLRGqMJFVSMP6LtVmd2db' />
+            <input type="hidden" name="topic" value="Eigenvectors, Systematic risk, Covariance matrices, Factor analysis, Error rates, Security prices, Arbitrage, Mathematical models, Automatic picture transmission, Pricing" />
+            
+    <input type="hidden" name="item_doi" value="10.2307/2328749" />
+    <input type="hidden" name="item_stable_url" value="/stable/pdf/2328749.pdf" />
+
+
+    <input type="hidden" name="item_title" value="Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors" />
+
+
+    <input type="hidden" name="item_authors" value="Ravi Shukla, Charles Trzcinka" />
+
+
+            <input type="hidden" name="feedback_kind" value="ITEMVIEW" />
+            <input type="hidden" name="feedback_type" value="THMDN" />
+            <input type="hidden" name="institution_name" value="" />
+            <button type="submit" id="feedback_thumbdown" class="feedback-button mls txtm">
+                <i class="icon-thumbs-o-down primary-color" aria-label="Thumbs down. These topics are not helpful."></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div id="flag-description" aria-live="assertive">
+    <a data-toggle="flag-reason" data-dropdown="flag-reason" href="#" title="This link opens a feedback panel for you to check off the topics that are inaccurate.">
+        <em class="smTxt small-text">See something inaccurate? Let us know!</em>
+    </a>
+</div>
+
+<div id="flag-reason" class="f-dropdown large content txtl" data-dropdown-content aria-autoclose="false" data-closable>
+    <h4 class="small-heading">Select the topics that are inaccurate.</h4>
+    <form id="flag-reason-form" class="form-jstor ajax-form mtl" action="/topic/page-feedback" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='b9CeR6Wd3bKuLRGqMJFVSMP6LtVmd2db' />
+        
+            <ul class="small-block-grid-1 medium-block-grid-2 mas">
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-eigenvectors" type="checkbox" name="topic" value="eigenvectors" />
+                <label for="feedback-eigenvectors" class="mln mbm normal dark-grey">Eigenvectors</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-systematic-risk" type="checkbox" name="topic" value="systematic-risk" />
+                <label for="feedback-systematic-risk" class="mln mbm normal dark-grey">Systematic risk</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-covariance-matrices" type="checkbox" name="topic" value="covariance-matrices" />
+                <label for="feedback-covariance-matrices" class="mln mbm normal dark-grey">Covariance matrices</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-factor-analysis" type="checkbox" name="topic" value="factor-analysis" />
+                <label for="feedback-factor-analysis" class="mln mbm normal dark-grey">Factor analysis</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-error-rates" type="checkbox" name="topic" value="error-rates" />
+                <label for="feedback-error-rates" class="mln mbm normal dark-grey">Error rates</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-security-prices" type="checkbox" name="topic" value="security-prices" />
+                <label for="feedback-security-prices" class="mln mbm normal dark-grey">Security prices</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-arbitrage" type="checkbox" name="topic" value="arbitrage" />
+                <label for="feedback-arbitrage" class="mln mbm normal dark-grey">Arbitrage</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-mathematical-models" type="checkbox" name="topic" value="mathematical-models" />
+                <label for="feedback-mathematical-models" class="mln mbm normal dark-grey">Mathematical models</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-automatic-picture-transmission" type="checkbox" name="topic" value="automatic-picture-transmission" />
+                <label for="feedback-automatic-picture-transmission" class="mln mbm normal dark-grey">Automatic picture transmission</label>
+            </div>
+        </li>
+    
+        <li class="pan">
+            <div class="checkboxWrap">
+                <input id="feedback-pricing" type="checkbox" name="topic" value="pricing" />
+                <label for="feedback-pricing" class="mln mbm normal dark-grey">Pricing</label>
+            </div>
+        </li>
+    
+</ul>
+
+    <input type="hidden" name="item_doi" value="10.2307/2328749" />
+    <input type="hidden" name="item_stable_url" value="/stable/pdf/2328749.pdf" />
+
+
+    <input type="hidden" name="item_title" value="Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors" />
+
+
+    <input type="hidden" name="item_authors" value="Ravi Shukla, Charles Trzcinka" />
+
+
+<input type="hidden" name="feedback_type" value="INACC" />
+
+        
+
+        <input type="hidden" name="feedback_kind" value="ITEMVIEW" />
+        <input type="hidden" name="institution_name" value="" />
+
+        <div class="mtl">
+            <input type="submit" class="button button-jstor mbn" value="Report" />
+            <button class="link mlm" type="button" data-close>Cancel</button>
+        </div>
+    </form>
+</div>
+
+                     </div>
+                 
+             </div>
+        </div>
+    </div>
+
+            </div>
+            <div class="small-12 xlarge-3 columns" id="pds-mobile-place-holder">
+                
+    <ul class="action-buttons mln">
+        
+            
+                <li><a href="/stable/2328749?item_view=read_online" target="_blank" id="read-online-button" class="button" aria-controls="rr-overlay" role="button" data-reveal-id="rr-overlay" data-open="rr-overlay">Read Online (Free)</a></li>
+            
+            
+                <li><a href="/stable/2328749?item_view=download_purchase" target="_blank" id="download-purchase-button" class="button" aria-controls="pss-overlay" data-reveal-id="pss-overlay" data-open="pss-overlay" role="button">Download ($33.95)</a></li>
+            
+            
+            
+                
+                    <li><a href="#" id="subscribe-button" class="button" aria-controls="jpass-overlay" role="button" data-reveal-id="jpass-overlay" data-open="jpass-overlay">Subscribe ($9.99)</a></li>
+                
+                
+            
+        
+        <li class="download-pdf-button">
+            
+    
+
+
+        </li>
+        
+            <li class="no-js-hide mbs">
+                
+
+
+    <a href="/register/mylists?redirectUri=/stable/pdf/2328749.pdf%3Fopen_mylists%3D10.2307%252F2328749"
+         id="showListAndOutlineCTA" 
+        class="no-js-hide mylists-add">
+        Add to My Lists
+    </a>
+
+            </li>
+            <li class="cite-this-item-button mbs">
+                <a href="/citation/info/10.2307/2328749" class="cite-this-item" data-reveal-id="citation-tools" data-open="citation-tools" data-doi="10.2307/2328749">
+    Cite this Item
+</a>
+
+
+
+<div id="citation-tools" class="reveal-modal reveal medium" data-reveal data-icon="quote-right" data-circle-color="alert"
+     aria-labelledby="citation-tools-title" aria-live="polite" aria-relevant="additions" aria-atomic="true"
+     aria-busy="false" aria-hidden="true" role="dialog">
+
+    <header>
+        <h1 id="citation-tools-title">Cite This Item</h1>
+    </header>
+    <div id="citationBody" class="reveal-body">
+        <div class="mbm">
+            <h4 class="lookslikeh2">Copy Citation</h4>
+        </div>
+        <div class="copy-citation-mla notranslate">
+        
+        </div>
+        <div class="copy-citation-apa notranslate">
+        
+        </div>
+        <div class="copy-citation-chicago notranslate">
+        
+        </div>
+        <div class="mbm">
+            <h4 class="lookslikeh2">Export Citation</h4>
+        </div>
+        <div class="export-citation-refworks mbm mlm">
+            <a href="/citation/refworks/" target="_blank" data-sc="text link:citation refworks">Export to RefWorks</a>
+        </div>
+        <div class="export-citation-easybib mbm mlm">
+            <a href="/citation/easybib/" target="_blank" data-sc="text link:citation easybib">Export to EasyBib</a>
+        </div>
+        <div class="export-citation-ris mbm mlm">
+            <a href="/citation/ris/" data-sc="text link:citation ris">Export a RIS file</a> (For EndNote, ProCite, Reference Manager, Zotero…)
+        </div>
+        <div class="export-citation-text mbm mlm">
+            <a href="/citation/text/" data-sc="text link: citation text">Export a Text file</a> (For BibTex)
+        </div>
+        <div class="citation-note">
+            <strong>Note:</strong> Always review your references and make any necessary corrections before using. Pay attention to names, capitalization, and dates.
+        </div>
+    </div>
+
+    <a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+
+
+
+        <script id="tpl-citation_item" type="text/x-handlebars-template">
+        
+    
+    <div class="mbm mlm">
+        <strong class="mbs">{{ label }}</strong>
+        <div class="clearfix">
+            <div id="{{ label }}_text" class="{{ class_name }} left pas brdra citation-copy">{{ citation }}</div>
+            <button data-tooltip data-options="disable_for_touch:true" data-tracking="{{ label }}" data-selector="clipboard-tip-{{ label }}" title="Copy to Clipboard" aria-label="Copy {{ label }} format to clipboard" data-clipboard-target="#{{ label }}_text" class="button button-img copy tiny mhs" type="button">Copy</button>
+        </div>
+    </div>
+
+
+        </script>
+
+
+            </li>
+        
+    
+    
+        
+        <li class="journal_info_button">
+            <a href="#" data-sc="drop down:journal info" data-toggle="journal_info_drop" data-dropdown="journal_info_drop" aria-controls="journal_info_drop" aria-expanded="false" title="Select to display Journal Info">Journal Info</a>
+            
+<div
+    id="journal_info_drop"
+    class="f-dropdown content medium txtl"
+    data-dropdown-content
+    aria-hidden="true"
+    tabindex="-1"
+    aria-autoclose="false"
+    data-position="bottom"
+    data-alignment="right"
+    data-closable
+>
+
+
+<div class="journal lookslikeh2 drop-content-title">The Journal of Finance</div>
+    
+        <div class="journal_description mtm"><strong>Description:</strong> <p><cite>The Journal of Finance</cite> publishes leading research across all the 
+  major fields of financial research. It is the most widely cited academic journal 
+  on finance and one of the most widely cited journals in economics as well. Each 
+  issue of the journal reaches over 8,000 academics, finance professionals, libraries, 
+  government and financial institutions around the world. Published six times 
+  a year, the journal is the official publication of the American Finance Association, 
+  the premier academic organization devoted to the study and promotion of knowledge 
+  about financial economics.<br>
+
+JSTOR provides a digital archive of the print version of <cite>The Journal 
+    of Finance</cite>. The electronic version of the <cite>The Journal of Finance</cite> 
+    is available at <a href="http://www.interscience.wiley.com">http://www.interscience.wiley.com/</a>. 
+    Authorized users may be able to access the full text articles at this site.</p></div>
+    
+
+    
+        <div class="coverage-period mtm"><strong>Coverage:</strong> 1946-2013 (Vol. 1, No. 1 - Vol. 68, No. 6)</div>
+    
+
+    
+
+    
+
+
+<div class="moving-wall mtm">
+    <strong>Moving Wall:</strong> 3 years
+    
+        <a href="#" data-simple-toggle="panel1">(What is the moving wall?)</a>
+        <div id="panel1" class="callout very-light-gray mtm">
+            <p>The "moving wall" represents the time period between the last issue
+            available in JSTOR and the most recently published issue of a journal.
+            Moving walls are generally represented in years. In rare instances, a
+            publisher has elected to have a "zero" moving wall, so their current
+            issues are available in JSTOR shortly after publication.<br />
+            Note: In calculating the moving wall, the current year is not counted.<br />
+            For example, if the current year is 2008 and a journal has a 5 year
+            moving wall, articles from the year 2002 are available.</p>
+            <dl>
+                <dt><strong>Terms Related to the Moving Wall</strong></dt>
+                <dd><strong>Fixed walls:</strong> Journals with no new volumes being added to the archive.</dd>
+                <dd><strong>Absorbed:</strong> Journals that are combined with another title.</dd>
+                <dd><strong>Complete:</strong> Journals that are no longer published or that have been
+                combined with another title.</dd>
+            </dl>
+        </div>
+    
+</div>
+
+
+
+    
+        <div class="issn mtm"><strong>ISSN:</strong> 00221082</div>
+    
+
+    
+        <div class="eissn mtm"><strong>EISSN:</strong> 15406261</div>
+    
+
+    
+        <div class="subjects mtm"><strong>Subjects:</strong>
+            
+                Business & Economics,
+            
+                Business,
+            
+                Finance
+            
+        </div>
+    
+
+    
+        <div class="collections mtm"><strong>Collections:</strong>
+            
+                Arts & Sciences I Collection,
+            
+                Business & Economics Collection,
+            
+                Business I Collection,
+            
+                JSTOR Essential Collection
+            
+        </div>
+    
+
+    
+        <button class="close-button close-overlay" aria-label="Close Overlay" type="button" data-close>&#215; <span class="visuallyhidden">Close Overlay</span></button>
+    
+
+
+</div>
+
+
+        </li>
+        
+    
+    
+    </ul>
+    
+        <noscript>
+    <div class="clearfix" aria-hidden="true">
+        <div class="article-tools txtl pal">
+            <ul class="no-bullet mbn">
+                <li><strong>Article Tools</strong></li>
+                <li>
+                    <a href="/citation/info/10.2307/2328749" target="_blank">
+                        Cite this Item
+                    </a>
+                </li>
+                
+                    <li class="mvs">
+                        <a href="/stable/2328749?item_view=journal_info" target="_blank">Journal Info</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</noscript>
+    
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 medium-8 columns">
+            
+    
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="article_view_content" class="article-view-content ptxl">
+        <div class="row collapse">
+            
+            <div class="small-12 columns">
+                <ul id="content-tabs" class="tabs" data-tabs data-deep-link="true" data-update-history="true">
+                    <li class="tabs-title is-active" id="page_scan_tab">
+                        <a href="#page_scan_tab_contents" data-sc="tab:article tab">
+                            Article
+                        </a>
+                    </li>
+                    
+    
+    <li id="page_thumbnails_tab" class="tabs-title show-for-medium-up">
+        <a role="tab" href="#page_thumbnails_tab_contents" data-sc="tab:thumbnails tab">Thumbnails</a>
+    </li>
+    
+    
+    
+        <li id="references_tab">
+            
+                <a href="#" class="disabled" title="This link is disabled">References</a>
+            
+
+        </li>
+    
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="tabs-content" data-tabs-content="content-tabs">
+                    <noscript>
+                        <div class="notify-error reading-length" aria-hidden="true">
+                            You have javascript disabled.
+                        </div>
+                        
+    
+        <p class="f15">In order to preview this item and view access options please enable javascript.</p>
+    
+
+                    </noscript>
+
+                    
+    
+        
+<span class="visuallyhidden">Since scans are not currently available to screen readers, please <a href="mailto:support@jstor.org?subject=Accessibility Request: URP and Register+Read DOI: 10.2307/2328749">contact JSTOR User Support for access.</a> We'll provide a PDF copy for your screen reader.</span>
+    
+
+
+                    
+    <div id="page_scan_tab_contents" class="tabs-panel is-active">
+        <div class="page-scan">
+    <div class="row mbm">
+        <div class="small-12 medium-12 columns mts">
+            <span class="page-scan-current-page">
+</span>
+        </div>
+        
+    </div>
+    
+    
+    <div class="page-scan-wrapper">
+        
+            <div class="banner urp-banner primary-background">
+    <div class="banner-wrap banner-wrap-l"></div>
+    <div class="row">
+        
+            <div class="small-2 columns mvm">
+                <span class="lookslikeh2 pll">PREVIEW </span>
+            </div>
+        
+    </div>
+    <div class="banner-wrap banner-wrap-r"></div>
+
+    
+        
+            <div id="rr-overlay" class="reveal-modal reveal small" data-reveal
+     data-icon="laptop" data-circle-color="alert" aria-labelledby="rr-overlay_title"
+     aria-hidden="true" role="dialog">
+    <header>
+        <h1 id="rr-overlay_title">
+    Read Online (Beta)
+
+    <span class="visuallyhidden">Read Online (Free) relies on page scans, which are not currently available to screen readers. To access this article, please <a href="mailto:support@jstor.org?subject=Accessibility Request: URP and Register+Read DOI: 10.2307/2328749">contact JSTOR User Support.</a> We'll provide a PDF copy for your screen reader.</span>
+</h1>
+    </header>
+    <div id="rr-overlay_body" class="reveal-body">
+        
+    
+
+<div class="row pal">
+    <div class="small-12 medium-6 columns brdrr">
+        <h3>Add to your shelf</h3>
+        
+            <p class="pln pbn">Read this item online for free by registering for a MyJSTOR account.</p>
+            
+            <a href="/register?redirectUri=%2Faction%2FshowShelf%3Fcandidate%3D10.2307%2F2328749" class="button button-jstor mtl"> Register</a>
+            
+            <p class="mbn">Already have an account? <a href="/action/showLogin?redirectUri=%2Faction%2FshowShelf%3Fcandidate%3D10.2307%2F2328749">Login</a></p>
+        
+    </div>
+    <div class="small-12 medium-6 columns">
+        <h3>How does it work?</h3>
+
+        <ol>
+            <li class="mvm">Register for a MyJSTOR account.</li>
+            <li class="mvm">Add up to 3 free items to your shelf.</li>
+            <li class="mvm">Items added to your shelf can be removed after 14 days.</li>
+        </ol>
+    </div>
+</div>
+<div class="overlay-footer pvm txtc mal information-background">
+    <p class="pan mbn">
+    
+        <a href="/institutionSearch?redirectUri=%2fstable%2f10.2307%2F2328749" data-sc="shelf modal inst link click">Login via your institution</a>
+    
+    </p>
+</div>
+
+    </div>
+    <a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+        
+        
+            
+                <div id="pss-overlay" class="reveal-modal reveal small" data-reveal data-icon="shopping-cart" data-circle-color="dark-green"
+     aria-labelledby="pss-overlay-header" aria-describedby="pss-overlay-body" role="dialog" aria-hidden="true">
+
+
+<header>
+    <h1 id="pss-overlay-header">Purchase Options</h1>
+</header>
+<div id="pss-overlay-body">
+    <div class="row pal">
+        <div class="medium-6 columns">
+            <h3>Purchase a PDF</h3>
+            
+                
+                    <p class="pln"><a href="/purchase/pss/checkout?doi=10.2307/2328749">Purchase this article for $33.95 USD.</a></p>
+                
+            
+        </div>
+        <div class="medium-6 columns brdrl">
+            <h3>How does it work?</h3>
+            <ol>
+                <li class="mvm">Select the  purchase option.</li>
+                <li class="mvm">Check out using a credit card or bank account with <a href="http://www.paypal.com" target="_blank">PayPal</a>.</li>
+                <li class="mvm">Read your article online and download the PDF from your email or your MyJSTOR account.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="overlay-footer pvm txtc mal information-background">
+        <p class="pan mbn">
+        
+            <a href="/institutionSearch?redirectUri=%2fstable%2f10.2307%2F2328749">Login via your institution</a>
+        
+        </p>
+    </div>
+</div>
+
+
+
+<a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+
+    <div id="myjstor-login" class="overlay-jstor-modal reveal-modal reveal small" role="dialog" data-reveal data-icon="shopping-cart" data-circle-color="dark-green">
+	<h1 class="headerBottomLines overlayHeader">Why register for MyJSTOR?</h1>
+    <ul>
+        <li>Access supplemental materials and multimedia.</li>
+        <li>Unlimited access to purchased articles.</li>
+        <li>Ability to save and export citations.</li>
+        <li>Custom alerts when new content is added.</li>
+    </ul>
+    <span><a class="button button-jstor register">Register/Login</a></span> <span class="mlxl"><a href="#" class="proceed">Proceed to Cart</a></span>
+    <a class="close-reveal-modal close-button" data-close title="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+
+            
+        
+        
+            
+
+<div id="jpass-overlay" class="reveal-modal reveal small" data-reveal data-icon="arrow-right" data-circle-color="dark-green"
+     aria-labelledby="jpass-overlay-header" aria-describedby="jpass-overlay-body" role="dialog" aria-hidden="true">
+    <header>
+        <h1 id="jpass-overlay-header">Subscribe to JPASS</h1>
+    </header>
+    <div id="jpass-overlay-body">
+        <div class="row pal">
+            
+                <div class="medium-6 columns">
+                    <h3>Monthly Plan</h3>
+                    <ul>
+                        <li class="mvm">Access everything in the JPASS collection</li>
+                        <li class="mvm">Read the full-text of every article</li>
+                        <li class="mvm">Download up to 5 article PDFs to save and keep</li>
+                    </ul>
+                    <a href="/purchase/jpass/checkout?offerCode=SlBBU1MtSS1Nb250aA&cid=dsp_URP_button" class="button">$9.99/month</a>
+                </div>
+                <div class="medium-6 columns brdrl">
+                    <h3>Yearly Plan</h3>
+                    <ul>
+                        <li class="mvm">Access everything in the JPASS collection</li>
+                        <li class="mvm">Read the full-text of every article</li>
+                        <li class="mvm">Download up to 60 article PDFs to save and keep</li>
+                    </ul>
+                    <a href="/purchase/jpass/checkout?offerCode=SlBBU1MtSS1ZZWFyLTEwcGN0&cid=dsp_URP_button" class="button">$99/year</a>
+                </div>
+            
+            
+        </div>
+        <div class="overlay-footer pvm txtc mal information-background">
+            <p class="pan mbn">
+            
+                <a href="/institutionSearch?redirectUri=%2fstable%2f10.2307%2F2328749">Login via your institution</a>
+            
+            </p>
+        </div>
+        <a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+    </div>
+</div>
+        
+    
+
+</div>
+
+
+            <div class="pages-and-paging-wrapper">
+        
+
+        
+        <div class="page-center first-page-only">
+            
+                <div id="search-term-highlight-container" class="relative scan-image-wrapper loading" data-search-text="">
+                    <img class="page-scan-container" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-page="" data-last="1" alt="Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors "/>
+                </div>
+            
+        </div>
+        
+        
+        </div>
+        
+
+    </div>
+
+    
+            <div id="page1" data-doi="10.2307/2328749" data-page="1541" data-pagename="Viewing page 1541 of pages 1541-1564" data-s3="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3BhZ2VzL2R0Yy4xODUudGlmLmdpZg" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE4NS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page2" data-doi="10.2307/2328749" data-page="1542" data-pagename="Viewing page 1542 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE4Ni54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page3" data-doi="10.2307/2328749" data-page="1543" data-pagename="Viewing page 1543 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE4Ny54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page4" data-doi="10.2307/2328749" data-page="1544" data-pagename="Viewing page 1544 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE4OC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page5" data-doi="10.2307/2328749" data-page="1545" data-pagename="Viewing page 1545 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE4OS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page6" data-doi="10.2307/2328749" data-page="1546" data-pagename="Viewing page 1546 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5MC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page7" data-doi="10.2307/2328749" data-page="1547" data-pagename="Viewing page 1547 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5MS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page8" data-doi="10.2307/2328749" data-page="1548" data-pagename="Viewing page 1548 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5Mi54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page9" data-doi="10.2307/2328749" data-page="1549" data-pagename="Viewing page 1549 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5My54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page10" data-doi="10.2307/2328749" data-page="1550" data-pagename="Viewing page 1550 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5NC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page11" data-doi="10.2307/2328749" data-page="1551" data-pagename="Viewing page 1551 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5NS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page12" data-doi="10.2307/2328749" data-page="1552" data-pagename="Viewing page 1552 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5Ni54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page13" data-doi="10.2307/2328749" data-page="[1553]" data-pagename="Viewing page [1553] of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5Ny54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page14" data-doi="10.2307/2328749" data-page="1554" data-pagename="Viewing page 1554 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5OC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page15" data-doi="10.2307/2328749" data-page="1555" data-pagename="Viewing page 1555 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzE5OS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page16" data-doi="10.2307/2328749" data-page="1556" data-pagename="Viewing page 1556 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwMC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page17" data-doi="10.2307/2328749" data-page="1557" data-pagename="Viewing page 1557 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwMS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page18" data-doi="10.2307/2328749" data-page="1558" data-pagename="Viewing page 1558 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwMi54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page19" data-doi="10.2307/2328749" data-page="1559" data-pagename="Viewing page 1559 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwMy54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page20" data-doi="10.2307/2328749" data-page="1560" data-pagename="Viewing page 1560 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwNC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page21" data-doi="10.2307/2328749" data-page="1561" data-pagename="Viewing page 1561 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwNS54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page22" data-doi="10.2307/2328749" data-page="1562" data-pagename="Viewing page 1562 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwNi54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page23" data-doi="10.2307/2328749" data-page="1563" data-pagename="Viewing page 1563 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwNy54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+            <div id="page24" data-doi="10.2307/2328749" data-page="1564" data-pagename="Viewing page 1564 of pages 1541-1564" data-s3="None" data-ocr="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9vY3JzLzIwOC54bWxfXy4uSlNUT1JfT0NSX0pTT04"></div>
+    
+</div>
+<div class="no_img_available hide">
+    
+    <div class="no-page-display lookslikeh1 bold txtc">
+        Preview not available
+    </div>
+    
+</div>
+
+
+
+<div class="abstract" data-ajax="false">
+    <h2>Abstract</h2>
+    <div >
+    
+        <div class="abstract1">We examine the cross-sectional pricing equation of the APT using the elements of eigenvectors and the maximum likelihood factor loadings of the covariance matrix of returns as measures of risk. The results indicate that, for data assumed stationary over twenty years, the first vector is a surprisingly good measure of risk when compared with either a one- or a five-factor model or a five-vector model. We conclude that in some circumstances principal components analysis may be preferred to factor analysis.</div>
+    
+    </div>
+</div>
+
+
+
+    </div>
+    <div id="page_thumbnails_tab_contents" class="tabs-panel">
+        <div id="thumbnails" class="reading-length">
+    <h2>Page Thumbnails</h2>
+   
+    <div id="thumbs" class="mtl ">
+        <ul class="medium-block-grid-4 txtc pbs">
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_1"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xODUudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1541"/>
+                        <div>
+1541</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_2"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xODYudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1542"/>
+                        <div>
+1542</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_3"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xODcudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1543"/>
+                        <div>
+1543</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_4"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xODgudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1544"/>
+                        <div>
+1544</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_5"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xODkudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1545"/>
+                        <div>
+1545</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_6"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTAudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1546"/>
+                        <div>
+1546</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_7"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTEudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1547"/>
+                        <div>
+1547</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_8"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTIudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1548"/>
+                        <div>
+1548</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_9"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTMudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1549"/>
+                        <div>
+1549</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_10"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTQudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1550"/>
+                        <div>
+1550</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_11"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTUudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1551"/>
+                        <div>
+1551</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_12"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTYudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1552"/>
+                        <div>
+1552</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_13"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTcudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+[1553]"/>
+                        <div>
+[1553]</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_14"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTgudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1554"/>
+                        <div>
+1554</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_15"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4xOTkudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1555"/>
+                        <div>
+1555</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_16"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDAudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1556"/>
+                        <div>
+1556</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_17"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDEudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1557"/>
+                        <div>
+1557</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_18"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDIudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1558"/>
+                        <div>
+1558</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_19"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDMudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1559"/>
+                        <div>
+1559</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_20"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDQudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1560"/>
+                        <div>
+1560</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_21"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDUudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1561"/>
+                        <div>
+1561</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_22"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDYudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1562"/>
+                        <div>
+1562</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_23"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDcudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1563"/>
+                        <div>
+1563</div>
+                    
+                </li>
+            
+                <li class="txtm">
+                    
+                        <img id="thumbnail_image_24"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-echo="czM6Ly9zZXF1b2lhLWNlZGFyL2NpZC1wcm9kLTEvYmE2NzM1YmMvZjQyYy8zOTkxL2E5OWQvMmRkZDFiNmNjM2M1L2kzNDAxNTEvMjMyODc0OS9ncmFwaGljL3NtYWxsL2R0Yy4yMDgudGlmLmpwZw"
+                             alt="Thumbnail: Page 
+1564"/>
+                        <div>
+1564</div>
+                    
+                </li>
+            
+        </ul>
+    </div>
+    
+</div>
+    </div>
+    
+
+
+                </div>
+            </div>
+        </div>
+        
+            <div class="mbl ">
+                <div class="copyright-statement">
+    
+        <cite>The Journal of Finance</cite> © 1990 <a href="/publisher/afina" class="publisher-link">American Finance Association</a>
+    
+</div>
+            </div>
+        
+
+        
+
+
+
+
+        
+        <div class="mbl rightslink">
+           
+
+
+
+
+
+    
+    <a class="ccc-logo" href="https://www.copyright.com/openurl.do?sid=pd_ITHAKA&servicename=all&WT.mc_id=tpd_ITHAKA19334192&issn=00221082&date=1990" target="_blank" title="This link opens in a new window">
+        Request Permissions
+    </a>
+
+        </div>
+        
+    </div>
+
+
+    
+        <div id="cdt" data-jimg-host="pt.j-img.org" data-content-id="ba6735bc-f42c-3991-a99d-2ddd1b6cc3c5" data-uuid="9fe2272b-8d17-4849-b4e1-14dd0b9ffcb2" data-urp="true"></div>
+    
+
+    
+
+    
+
+
+
+
+
+    </div>
+    <div class="small-12 xlarge-4 columns" data-equalizer-watch>
+     <div class="subcontent-body">
+            
+    <div class="revive-ad mvl">
+        
+
+
+<script type='text/javascript'>
+    <!--//<![CDATA[
+        var m3_u = '//ja.jstor.org/www/serve/ajs.php';
+
+        if (!document.MAX_used){
+            document.MAX_used = ',';
+        }
+        document.write("<script type='text/javascript' src='" + m3_u);
+        
+    var is_urp = true,
+    is_shelved = false,
+    is_in_jpass = true,
+    is_from_daily = false;
+    document.write("?zoneid=16");
+    document.write("&amp;articleId=10.2307/2328749");
+    
+        document.write ("&amp;issueId=10.2307/i340151");
+        document.write("&amp;publisherCode=black");
+    
+    document.write ("&amp;journalCode=jfinance");
+    document.write("&amp;urp=" + is_urp);
+    document.write("&amp;rfs=" + is_shelved);
+    document.write("&amp;jpass=" + is_in_jpass);
+    document.write("&amp;fromDaily=" + is_from_daily);
+
+        document.write('&amp;cb=7277540858');
+        if (document.MAX_used != ','){
+            document.write("&amp;exclude=" + document.MAX_used);
+        }
+        document.write(document.charset ?
+                                '&amp;charset='+document.charset :
+                                (document.characterSet ?
+                                        '&amp;charset='+document.characterSet : ''));
+        document.write("&amp;loc=" + escape(window.location));
+        if (document.referrer) {
+            document.write("&amp;referer=" + escape(document.referrer));
+        }
+        if (document.context) {
+            document.write("&context=" + escape(document.context));
+        }
+        if (document.mmm_fo) {
+            document.write("&amp;mmm_fo=1");
+        }
+        document.write("'><\/script>");
+    //]]>-->
+</script>
+<noscript>
+    <a href="//ja.jstor.org/www/serve/ck.php?n=a680fa70&amp;cb=7277540858" target="_blank">
+        <img src="//ja.jstor.org/www/serve/avw-jstor.php?zoneid=16&amp;cb=7277540858&amp;n=a680fa70" border="0" alt=""/>
+    </a>
+</noscript>
+
+    </div>
+
+    
+        
+
+
+
+    
+
+    
+
+        </div>
+    </div>
+
+
+        </div>
+
+        
+    
+
+
+
+
+        
+        
+            
+
+
+
+<footer class="footer">
+    
+
+    <div class="row">
+        <div class="columns">
+            <h2 class="xlarge-heading">Explore JSTOR</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-5 large-3 columns">
+            <div class="row">
+                <div class="small-7 columns">
+                    <ul class="no-bullet mbn">
+                        <li><a href="/subjects" data-qa="ftr-by-subj">By Subject</a></li>
+                        <li><a href="/action/showJournals?browseType=title" data-qa="ftr-by-title">By Title</a></li>
+                        <li><a href="/publishers" data-qa="ftr-by-pub">By Publisher</a></li>
+                        <li><a href="/action/showAdvancedSearch" data-qa="ftr-adv-search">Advanced Search</a></li>
+                    </ul>
+                </div>
+                <div class="small-5 columns end">
+                    <ul class="no-bullet">
+                        <li><a href="https://support.jstor.org/hc/en-us/articles/115003417088-Access-How-to-Login-as-a-Student" target="_blank" title="This link opens in a new window" data-qa="ftr-get-access">Get Access</a></li>
+                        <li><a href="http://support.jstor.org" target="_blank" title="This link opens in a new window" data-qa="ftr-support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-7 large-4 columns vertical-rule-footer">
+            <div class="row">
+                <div class="small-7 columns">
+                <ul class="no-bullet responsive-separator">
+                    <li><a href="http://about.jstor.org" target="_blank" title="This link opens in a new window" data-qa="ftr-about-jstor">About JSTOR</a></li>
+                    <li><a href="http://about.jstor.org/mission-history/" target="_blank" title="This link opens in a new window" data-qa="ftr-mission-and-history">Mission and History</a></li>
+                    <li><a href="http://about.jstor.org/whats-in-jstor/" target="_blank" title="This link opens in a new window" data-qa="ftr-whats-in-jstor">What's in JSTOR</a></li>
+                    <li><a href="http://about.jstor.org/get-jstor/" target="_blank" title="This link opens in a new window" data-qa="ftr-get-jstor">Get JSTOR</a></li>
+                    <li><a href="http://about.jstor.org/news/" target="_blank" title="This link opens in a new window" data-qa="ftr-news">News</a></li>
+                    <li><a href="http://about.jstor.org/events/" target="_blank" title="This link opens in a new window" data-qa="ftr-events">Events</a></li>
+                </ul>
+                </div>
+                <div class="small-5 columns end">
+                <ul class="no-bullet">
+                    <li><a href="http://labs.jstor.org/" target="_blank" title="This link opens in a new window" data-qa="ftr-labs">JSTOR Labs</a></li>
+                    <li><a href="https://daily.jstor.org/" target="_blank" title="This link opens in a new window" data-qa="ftr-daily">JSTOR Daily</a></li>
+                    <li><a href="https://www.ithaka.org/careers/" target="_blank" title="This link opens in a new window" data-qa="ftr-careers">Careers</a></li>
+                    <li><a href="/contact-us/" target="_blank" title="This link opens in a new window" data-qa="ftr-contact-us">Contact Us</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 large-2 columns">
+            <ul class="no-bullet">
+                <li><a href="/librarians" target="_blank" title="This link opens in a new window" class="button secondary" data-qa="ftr-for-librarians">For Librarians</a></li>
+                <li><a href="http://about.jstor.org/publishers/" target="_blank" title="This link opens in a new window" class="button secondary" data-qa="ftr-for-pub">For Publishers</a></li>
+            </ul>
+        </div>
+        <div class="small-12 large-3 columns small-text">
+            <ul class="menu simple no-bullet no-underline">
+                <li><a href="https://twitter.com/JSTOR" target="_blank" class="icon-twitter twitter-styling icon-large" aria-label="Twitter - This link opens in a new window"></a></li>
+                <li><a href="https://www.facebook.com/JSTOR.org" target="_blank" class="icon-facebook-official facebook-styling icon-large" aria-label="Facebook - This link opens in a new window"></a></li>
+            </ul>
+            <p class="small-text" data-qa="ftr-mission-statement">JSTOR is part of ITHAKA, a not-for-profit organization helping the academic community use digital technologies to preserve the scholarly record and to advance research and teaching in sustainable ways.</p>
+            <p class="small-text" data-qa="ftr-copyright-statement">&copy;2000-2017 ITHAKA. All Rights Reserved. JSTOR&reg;, the JSTOR logo, JPASS&reg;, and ITHAKA&reg; are registered trademarks of ITHAKA.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-6 large-8 columns">
+            <ul class="menu simple no-bullet responsive-links">
+                <li><a class="pln" href="http://about.jstor.org/terms/" target="_blank" title="This link opens in a new window" data-qa="ftr-terms-and-conditions">Terms & Conditions of Use</a></li>
+                <li><a href="http://about.jstor.org/privacy/" target="_blank" title="This link opens in a new window" data-qa="ftr-privacy-policy">Privacy Policy</a></li>
+                <li><a href="http://about.jstor.org/use-of-cookies/" target="_blank" title="This link opens in a new window" data-qa="ftr-use-of-cookies">Use of Cookies</a></li>
+                <li><a class="prn" href="http://about.jstor.org/accessibility/" target="_blank" title="This link opens in a new window" data-qa="ftr-accessibility">Accessibility</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="small-12 medium-6 large-4 columns no-js-hide">
+            <div id="google_translate_element" aria-hidden="true"></div>
+        </div>
+        
+    </div>
+</footer>
+
+        
+
+        
+
+        
+    <div id="terms-and-conditions" class="reveal-modal reveal medium" data-reveal
+     data-icon="arrow-down" data-circle-color="dark-green" aria-labelledby="terms-and-conditions_title"
+     aria-hidden="true"  aria-live="polite" aria-atomic="true"
+     aria-relevant="additions"role="dialog">
+    <header>
+        <h1 id="terms-and-conditions_title">Loading</h1>
+    </header>
+    <div id="terms-and-conditions_body" class="reveal-body">
+        
+            
+                <p>Processing your request...</p>
+            
+        
+    </div>
+    <a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+    <div id="mylists" class="reveal-modal reveal medium" data-reveal
+     data-icon="plus" data-circle-color="primary" aria-labelledby="mylists_title"
+     aria-hidden="true"  aria-live="polite" aria-atomic="true"
+     aria-relevant="additions"role="dialog">
+    <header>
+        <h1 id="mylists_title">Loading</h1>
+    </header>
+    <div id="mylists_body" class="reveal-body">
+        
+            
+                <p>Processing your request...</p>
+            
+        
+    </div>
+    <a href="#" class="close-reveal-modal close-button" data-close aria-label="Close Overlay">&#215; <span class="visuallyhidden">Close Overlay</span></a>
+</div>
+    
+        <script id="tpl-my-lists-register" type="text/x-handlebars-template">
+        
+        
+
+
+<div class="row pal">
+    <div class="large-6 columns">
+        <div class="row">
+            <div class="lookslikeh2">Organize Your Work</div>
+            <p class="pln pbn">Make lists and save your research.</p>
+        </div>
+
+
+        
+        <div class="row"><a id="reg_uri" href="{{{ reg_url }}}" class="button button-jstor mtl">Register</a></div>
+        
+
+        
+        <div class="row">
+            <p class="pln pbn">
+                Already have an account? <a id="login_uri" href="{{{ login_url }}}" class=" mvl">Login</a>
+            </p>
+        </div>
+        
+    </div>
+    <div class="large-6 columns">
+        <div class="row">
+            <div class="lookslikeh2">How does it work?</div>
+            <ol>
+                <li class="mvm">Register for a free MyJSTOR account.</li>
+                <li class="mvm">Add articles and eBook chapters to your lists.</li>
+                <li class="mvm">Get citations in MLA, APA, and Chicago formats.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+    
+        </script>
+
+
+
+        
+    
+            <script type="text/javascript" src="//www.jstor.org/assets/global_20171208T1811/build/global/js/global.min.js"></script>
+        
+
+    
+
+    
+        <script type="text/javascript" src="//www.jstor.org/assets/article-view_20171206T1635/build/article-view/js/article-view.min.js"></script>
+    
+
+
+        
+            
+                <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+
+        let googleTranslateWindow = document.getElementsByClassName("goog-te-menu-frame")[0],
+            googleTranslateButton = document.getElementsByClassName("goog-te-gadget-simple")[0];
+        googleTranslateWindow.contentDocument.addEventListener("keydown", function(event) {
+            if (event.keyCode === 27) {
+                document.activeElement.blur();
+                googleTranslateButton.focus();
+                googleTranslateWindow.style.display = 'none';
+            }
+        });
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+            
+        
+
+        
+    <script>
+    // COUNTER 4 tagging code
+    window.starData = {
+        'contentType': 'journal',
+        'journal': 'The Journal of Finance',
+        'article': 'Sequential Tests of the Arbitrage Pricing Theory: A Comparison of Principal Components and Maximum Likelihood Factors',
+        'institution_consortium_map': [],
+        'yop': '1990',
+        'doi': '10.2307/2328749',
+        'SEARCH_FED': 'False',
+        'has_access': false,
+        'page_scan': true,
+        'pdf_only': false,
+        'full_text': false,
+        'id' : 'excelsior:e984a63afb58a7e41ddab54108ca0717'
+    };
+</script>
+    
+            
+                <script>
+                    var _$tarQ = _$tarQ || [];
+                    (function (){
+                        var stars = document.createElement('script'),
+                            s = document.getElementsByTagName('script')[0];
+                        stars.async= true;
+                        stars.type = 'text/javascript';
+                        stars.src = "//receiver.star.ith.semcs.net/star-aws.js";
+                        s.parentNode.insertBefore(stars, s);
+                    })();
+                </script>
+            
+        
+
+
+        <div id="env_info" class="hide" data-debug="False"></div>
+
+        
+            <!-- DTM Footer code -->
+            <script type="text/javascript">
+                //To prevent JS errors when disabled
+                if(typeof _satellite !== "undefined"){
+                    _satellite.pageBottom();
+                }
+            </script>
+        
+
+        <script>
+    var logPerimeterXLoadingErrors = function() {
+        if (window.perimeterXLoadingErrors) {
+            for (var property in window.perimeterXLoadingErrors) {
+                if (window.perimeterXLoadingErrors.hasOwnProperty(property)) {
+                    jslogger.log_event("error", "perimeterx." + property + ".loadingError", {errorType: window.perimeterXLoadingErrors[property]});
+                }
+            }
+        }
+    }
+</script>
+    </body>
+</html>

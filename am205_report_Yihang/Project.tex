@@ -229,7 +229,9 @@ The eigenvalue associated to a component is equal to the sum of the squared fact
 $$ ctr_{i,l} = \frac{f^2_{i,l} }{\sum f^2_{i,l}} = \frac{f^2_{i,l} }{\lambda_{l}} $$  \hfill (16)
 where $\lambda_{l}$ is the eigenvalue of the $l$th component. The value of a contribution is between 0 and 1 and, for a given component, the sum of the contributions of all observations is equal to 1. The larger the value of the contribution, the more the observation contributes to the component. 
 
-\section*{3 - Implementation}
+\section*{3 - Jacobian}
+
+\section*{4 - Implementation}
 
 \subsection*{(a) Data}
 
@@ -342,7 +344,7 @@ The purpose of this section was to elucidate how PCA can be conducted on a finan
 
 In order to further confirm the weak correlation for each pair of currencies (cryptocurrency time-series), we make use of two distinct tools, namely, one-factor linear regression (hence its $R^2$ metric) and Kendall’s rank correlation metric of $\tau$. (NOT SURE IF WE NEED THIS.. DEPEND ON ANY SPACE LEFT)
 
-\section*{3 - Do Cryptocurrencies Move in a Parallel Manner?}
+\section*{5 - Do Cryptocurrencies Move in a Parallel Manner?}
 
 On November 23, 2017, Fortune magazine ran the story titled "Ethereum Price Hits New High as Billionaire Predicts 25\% Surge In the Next Month." Several articles like this appear daily for seemingly each cryptocurrency, and each touts the purported benefits of its subject coin's features over the rest. This all alludes to a question common in the investment world for all groupings of assets. If Ethereum does well in a given month or year, is it because \textit{Ethereum} is special in relation to its coin colleagues or is it because cryptocurrencies \textit{as a whole} did well? In more statistical words, how much of the variation in individual cryptocurrencies could be described by variation in the universe of cryptocurrencies as a whole? And relatedly, is it useful to aggregate cryptocurrencies into an "asset class" or grouping? Before answering this ourselves, we review prior related studies on the matter.
 \subsection*{(a) Existing Literature}

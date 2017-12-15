@@ -1,0 +1,390 @@
+\documentclass[12pt,twoside]{article}
+
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{subfig}
+\usepackage{placeins}
+\usepackage{float}
+
+
+\usepackage{mdframed}
+
+
+\newcommand{\cross}[1][1pt]{\ooalign{%
+  \rule[1ex]{1ex}{#1}\cr% Horizontal bar
+  \hss\rule{#1}{.7em}\hss\cr}}% Vertical bar
+
+\input{macros}
+
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+\newcommand{\theproblemsetnum}{}
+\newcommand{\releasedate}{December 1, 2017}
+\newcommand{\duedate}{December 1, 2017}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tabT}{\hspace*{\tabUnit}}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\newcommand{\dd}[1]{\mathrm{d}#1}
+
+\title{6.006 Problem Set 4}
+
+\begin{document}
+
+\handout{Crypto project \theproblemsetnum}{\releasedate} %{April 6, 2017}
+
+\setlength{\parindent}{0pt}
+
+\medskip
+
+\hrulefill
+
+\medskip
+
+{\bf Name:} Yihang Yan, Tomas Gudmundsson, Nathaniel Stein
+
+\medskip
+
+\hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% See below for common and useful latex constructs. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Some useful commands:
+%$f(x) = \Theta(x)$
+%$T(x, y) \leq \log(x) + 2^y + \binom{2n}{n}$
+% {\tt code\_function}
+
+
+% You can create unnumbered lists as follows:
+%\begin{itemize}
+%    \item First item in a list 
+%        \begin{itemize}
+%            \item First item in a list 
+%                \begin{itemize}
+%                    \item First item in a list 
+%                    \item Second item in a list 
+%                \end{itemize}
+%            \item Second item in a list 
+%        \end{itemize}
+%    \item Second item in a list 
+%\end{itemize}
+
+% You can create numbered lists as follows:
+%\begin{enumerate}
+%    \item First item in a list 
+%    \item Second item in a list 
+%    \item Third item in a list
+%\end{enumerate}
+
+% You can write aligned equations as follows:
+%\begin{align} 
+%    \begin{split}
+%        (x+y)^3 &= (x+y)^2(x+y) \\
+%                &= (x^2+2xy+y^2)(x+y) \\
+%                &= (x^3+2x^2y+xy^2) + (x^2y+2xy^2+y^3) \\
+%                &= x^3+3x^2y+3xy^2+y^3
+%    \end{split}                                 
+%\end{align}
+
+% You can create grids/matrices as follows:
+%\begin{align}
+%    A = 
+%    \begin{bmatrix}
+%        A_{11} & A_{21} \\
+%        A_{21} & A_{22}
+%    \end{bmatrix}
+%\end{align}
+% http://www.aip.de/groups/soe/local/numres/bookcpdf/c11-1.pdf
+\section*{1}
+\subsection*{Jacobi method}
+In order to find eigenvalues and eigenvectors of the covariance matrix, A, we use the Jacobi method. The method works by finding the largest non-diagonal element at location $(i,j)$ and makes it zero by doing a plane rotation on rows and columns $i$ and $j$. The Jacobi method is quite efficient with quadratic convergence and can be parallelized easily.  \\
+
+
+The rotation for matrix A works as follows:
+\begin{equation}
+     A' = P_{i,j,\theta}^T \cdot A \cdot P_{i,j,\theta}  
+\end{equation}
+
+where $P_{i,j,\theta} = P(i,j,\theta)$ is a Givens rotation matrix with the form:
+
+\begin{equation}
+P(i,j,\theta) = 
+\begin{bmatrix}
+     1 & \cdots & 0 & \cdots & 0 & \cdots & 0 \\
+     \vdots & \ddots & \vdots &   & \vdots &  & \vdots \\
+          0 & \cdots & c & \cdots & s & \cdots & 0 \\
+         \vdots &  & \vdots & \ddots  & \vdots &  & \vdots \\
+     0 & \cdots & -s & \cdots & c & \cdots & 0 \\
+              \vdots &  & \vdots &  & \vdots & \ddots  & \vdots \\
+                   0 & \cdots & 0 & \cdots & 0 & \cdots & 1 \\
+\end{bmatrix}
+\end{equation}\\
+
+This matrix has ones on the diagonal except where $c=cos(\theta)$ at locations (i,i) and (j,j). All other elements are 0 except $s=sin(\theta)$ at locations (i,j) and (j,i).\\
+
+When the Givens rotation matrix, $P_{i,j,\theta}$,  is multiplied with another matrix, $A$, as $P\cdot A$ it simulates a clockwise rotation in the plane by an angle $\theta$ in order to nullify the element at location $(i,j)$ and only affects rows and columns $i$ and $j$ in the process.\\
+ 
+
+In order to figure out the values of $c,s$ and $\theta$ we will simulate a matrix multiplication with $2x2$ matrices that contain the relevant information. We will represent the matrices as follows:
+\begin{equation}
+P_{i,j,\theta} = 
+\begin{bmatrix}
+     c_{ii} & s_{ij} \\
+    -s_{ji} & c_{jj} \\
+\end{bmatrix}
+,A = 
+\begin{bmatrix}
+     A_{ii} & A_{ij} \\
+    A_{ji} & A_{jj} \\
+\end{bmatrix}
+,A' = 
+\begin{bmatrix}
+     A_{ii}' & A_{ij}' \\
+    A_{ji}' & A_{jj}' \\
+\end{bmatrix}
+\end{equation}
+
+where the notation $A_{ij}$ denotes element at location $(i,j)$ in matrix A.\\
+
+
+Now we will find $c, s$ and $\theta$ so that the matrix multiplication nullifies the largest element. In order for P to satisfy eq. 1 we expand the matrix multiplication as follows with $c_{ii}=c_{jj}=c$ and $s_{ji}=s_{ij}=s$:\\
+\begin{equation}
+\begin{split}
+\begin{bmatrix}
+     A_{ii}' & A_{ij}' \\
+    A_{ji}' & A_{jj}' \\
+\end{bmatrix}
+ &=
+\begin{bmatrix}
+     c & -s \\
+    s & c \\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+     A_{ii} & A_{ij} \\
+    A_{ji} & A_{jj} \\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+     c & s \\
+     -s & c \\
+\end{bmatrix}\\
+&=\begin{bmatrix}
+     c\cdot A_{ii} - s\cdot A_{ji} & c\cdot A_{ij} - s\cdot A_{jj} \\
+     s\cdot A_{ii} + c\cdot A_{ji} & s\cdot A_{ij} + c\cdot A_{jj} \\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+     c & s \\
+     -s & c \\
+\end{bmatrix}\\
+&=\begin{bmatrix}
+c^2\cdot A_{ii} - cs\cdot A_{ji} - cs\cdot A_{ij} + s^2\cdot A_{jj} & cs\cdot A_{ii} - s^2\cdot A_{ji} + c^2\cdot A_{ij} - cs\cdot A_{jj}\\
+cs\cdot A_{ii} + c^2\cdot A_{ji} - s^2\cdot A_{ij} - cs\cdot A_{jj} & s^2\cdot A_{ii} + cs\cdot A_{ji} + cs\cdot A_{ij} + c^2\cdot A_{jj}\\
+\end{bmatrix}\\
+&=\begin{bmatrix}
+c^2\cdot A_{ii} - 2cs\cdot A_{ij}  + s^2\cdot A_{jj} & (c^2-s^2)\cdot A_{ij}  + cs\cdot (A_{ii} - A_{jj})\\
+(c^2-s^2)\cdot A_{ij}  - cs\cdot (A_{ii} - A_{jj}) & c^2\cdot A_{jj} + 2cs\cdot A_{ij} + s^2\cdot A_{ii}\\
+\end{bmatrix}
+\end{split}
+\end{equation}
+
+where the last elements are simplified because $A_{ij}=A_{ji}$.\\
+
+
+
+In order to make the non diagonal element in this matrix as 0 we will examine the non diagonal equation as follows:
+\begin{equation}
+A'_{ij} = (c^2 - s^2) \cdot A_{ij} + cs(A_{ii}-A_{jj}) = 0
+\end{equation}
+
+
+Hence it follows that:
+\begin{equation}
+\frac{c^2-s^2}{cs} = \frac{A_{jj}-A_{ii}}{A_{ij}}
+\end{equation}
+
+and we can define the rotation angle as follows:
+\begin{equation}
+\theta = cot(2\phi) = \frac{c^2-s^2}{2cs} = \frac{A_{jj}-A_{ii}}{2A_{ij}}
+\end{equation}
+and by letting $t = s/c$ we can rewrite the equation above as:\\
+\begin{equation}
+2cs\theta = c^2 - s^2 <=>
+t^2 + 2t\theta - 1 = 0
+\end{equation}
+which has the solutions:\\
+\begin{equation}
+t = 
+\bigg\{
+  \begin{tabular}{cc}
+$ -\theta + \sqrt{\theta^2+1}$ \\
+$ -(\theta + \sqrt{\theta^2+1})$ \\
+  \end{tabular}
+\end{equation}
+These solutions can be written more succinctly as
+\begin{equation}
+t =  -\theta + \sqrt{\theta^2+1}  = \frac{ \left(-\theta + \sqrt{\theta^2+1}\right)\left(-\theta + \sqrt{\theta^2+1}\right) }{\theta + \sqrt{\theta^2+1}}
+= \frac{ -\theta^2 + \theta^2 + 1 }{\theta + \sqrt{\theta^2+1}} = \frac{1}{\theta + \sqrt{\theta^2+1}}
+\end{equation}
+\begin{equation}
+t =  -\theta - \sqrt{\theta^2+1}  = \frac{ \left(-\theta - \sqrt{\theta^2+1}\right)\left(\theta - \sqrt{\theta^2+1}\right) }{\theta - \sqrt{\theta^2+1}}
+= \frac{ -\theta^2 + \theta^2 + 1 }{\theta - \sqrt{\theta^2+1}} = \frac{-1}{-\theta + \sqrt{\theta^2+1}}
+\end{equation}
+
+We want to rotate the matrix by the angle which corresponds to the smaller root of this equation and generally we can write the smaller root as:
+
+\begin{equation}
+t =  \frac{sign(\theta)}{|\theta|+ \sqrt{1+\theta^2}}
+\end{equation}
+and since $t=s/c$ we now have:\\
+\begin{equation}
+c =  \frac{1}{\sqrt{t^2+1}}, \hspace{5mm} s = t\cdot c
+\end{equation}
+
+
+Now we know how to set these variables for the rotations to work and we need to look at three scenarios to update the matrix when a rotation is performed:
+
+\begin{enumerate}[label=\roman*)]
+  \item Set value at location (i,j) as 0
+  \item Change diagonal values at locations (i,i) and (j,j)
+  \item Change values on rows and columns i and j except (i,i) and (j,j)
+\end{enumerate}
+
+The following diagram shows which values are modified during the rotation:
+\begin{center}
+\includegraphics[scale=0.5]{Matrix.png}
+\end{center}
+
+We define a tolerance $tol=10^{-9}$ and perform rotations until the largest non-diagonal element is less than the tolerance. Since the matrix is symmetric we will perform rotations on the upper triangle of the matrix until it has converged.\\
+
+
+For scenario i) we simply set the value of $A_{ij}'$ as 0. However, for scenario ii) we will look at the top left and bottom right elements in eq. 4 to gather equations to set the diagonal elements $A_{ii}'$ and $A_{jj}'$ . We have:
+\begin{equation}
+A_{ii}' = c^2 \cdot A_{ii} - 2cs\cdot A_{ij} + s^2\cdot A_{jj}
+\end{equation}
+
+From eq. 5 (because $A_{ij}'=0$) we can isolate $A_{jj}$ as\\
+\begin{equation}
+A_{jj} = A_{ii} - A_{ij}\frac{s^2-c^2}{cs}
+\end{equation}
+and since $c^2+s^2=1$ we simplify eq 14. as:
+\begin{equation}
+\begin{split}
+A_{ii}' &= c^2 \cdot A_{ii} - 2cs\cdot A_{ij} + s^2\cdot A_{jj}\\
+& = c^2 \cdot A_{ii} - 2cs\cdot A_{ij} + s^2 \left(A_{ii} - A_{ij}\frac{s^2-c^2}{cs}     \right)\\
+& = (c^2 + s^2) \cdot A_{ii} - s\left(2c +  \frac{s^2-c^2}{c}      \right)A_{ij}\\
+&= (c^2 + s^2) \cdot A_{ii} - \frac{s}{c}\left(2c^2 +  s^2-c^2      \right)A_{ij}\\
+& = A_{ii} - \frac{s}{c}\left(c^2 +  s^2      \right)A_{ij}\\
+& = A_{ii} - t\cdot A_{ij} 
+\end{split}
+\end{equation}
+Similarly we have:\\
+\begin{equation}
+A_{jj}' = A_{jj} + t\cdot A_{ij}
+\end{equation}
+
+
+
+For scenario iii) we can look at top of eq 4. and note that if we consider an element $A_{rj}$ when we perform rotation around $A_{ij}$ that only the last two matrices will change the result since the first matrix changes rows i and j and does not have effect on row $r$. The last matrix changes columns i and j and therefore changes the resulting matrix. Multiplying through these matrices gives us the equations:
+\begin{equation}
+\bigg\{
+  \begin{tabular}{cc}
+$A_{ri}' = cA_{ri} - sA_{rj}$\\
+$A_{rj}' = cA_{ri} + sA_{rj}$\\
+  \end{tabular}
+\end{equation}\\
+
+Lets look at $A_{ri}'$ which can be represented as:
+\begin{equation}
+\begin{split}
+A_{ri}' &= cA_{ri} - sA_{rj}\\
+&= \left(1 - \frac{(1-c)(1+c)}{1+c} \right) A_{ri} - sA_{rj} \\
+&= \left(1 - \frac{1-c^2}{1+c} \right) A_{ri} - sA_{rj} \\
+&= \left(1 - \frac{s^2}{1+c} \right) A_{ri} - sA_{rj} \\
+&= A_{ri}  - s \left(A_{rj} + \frac{s}{1+c} A_{ri} \right) \\
+&= A_{ri}  - s \left(A_{rj} + \tau A_{ri} \right)  
+\end{split}
+\end{equation}
+
+where 
+\begin{equation}
+\tau = \frac{s}{1+c}
+\end{equation}
+
+which has less roundoff error than eq. 18.\\
+
+Similarly we have
+\begin{equation}
+A_{rj}' = A_{rj}  + s \left(A_{ri} - \tau A_{rj} \right) 
+\end{equation}
+
+\vspace{5mm}
+To summarise we set values of elements in rows r and l and columns r and l as follows:
+\begin{enumerate}[label=\roman*)]
+  \item $A_{ij}=0$
+\item $\bigg\{
+  \begin{tabular}{cc}
+$A_{ii}' = A_{ii} - t\cdot A_{ij}$  \\
+$A_{jj}' = A_{jj} + t\cdot A_{ij}$ \\
+  \end{tabular}$
+\item $\bigg\{
+  \begin{tabular}{cc}
+$A_{ri}' = A_{ri}  - s \left(A_{rj} + \tau A_{ri} \right)$   \\
+$A_{rj}' = A_{rj}  + s \left(A_{ri} - \tau A_{rj} \right)$   \\
+  \end{tabular}$
+\end{enumerate}
+
+where
+\[ s=t\cdot c, \hspace{5mm} t = \frac{sign(\theta)}{|\theta|+ \sqrt{1+\theta^2}}, \hspace{5mm} \tau = \frac{s}{1+c}, \hspace{5mm} \theta = \frac{A_{ii}-A_{jj}}{2A_{ij}}  \]
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+

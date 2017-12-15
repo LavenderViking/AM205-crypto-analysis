@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.28)  14 DEC 2017 03:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.28)  15 DEC 2017 01:14
 entering extended mode
 **./Project.tex
 (Project.tex
@@ -702,13 +702,13 @@ Missing character: There is no í in font ptmr7t!
 <corr.png, id=28, 510.90875pt x 465.74pt>
 File: corr.png Graphic file (type png)
  <use corr.png>
-Package pdftex.def Info: corr.png used on input line 243.
+Package pdftex.def Info: corr.png used on input line 245.
 (pdftex.def)             Requested size: 357.63368pt x 326.01578pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [6 <./corr.png>]
-Overfull \hbox (15.27074pt too wide) in paragraph at lines 264--277
+Overfull \hbox (15.27074pt too wide) in paragraph at lines 266--279
 [][] 
  []
 
@@ -725,7 +725,7 @@ Missing character: There is no ô in font ptmr7t!
  <pca_loadings.png, id=38, 507.8975pt x 456.70625pt>
 File: pca_loadings.png Graphic file (type png)
  <use pca_loadings.png>
-Package pdftex.def Info: pca_loadings.png used on input line 310.
+Package pdftex.def Info: pca_loadings.png used on input line 312.
 (pdftex.def)             Requested size: 304.74086pt x 274.02585pt.
 
 Underfull \vbox (badness 2443) has occurred while \output is active []
@@ -734,44 +734,64 @@ Underfull \vbox (badness 2443) has occurred while \output is active []
 <biplot1.png, id=42, 487.8225pt x 452.69125pt>
 File: biplot1.png Graphic file (type png)
  <use biplot1.png>
-Package pdftex.def Info: biplot1.png used on input line 333.
+Package pdftex.def Info: biplot1.png used on input line 335.
 (pdftex.def)             Requested size: 292.69576pt x 271.61684pt.
  [9 <./pca_loadings.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [10 <./biplot1.png>] [11]
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no Æ in font ptmr7t!
+ [10 <./biplot1.png>]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 353.
+
+[11]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [12] [13] (Project.aux) ) 
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no Æ in font ptmr7t!
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no Æ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no Æ in font ptmr7t!
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13] [14] (Project.aux) ) 
 Here is how much of TeX's memory you used:
- 14722 strings out of 493323
- 270497 string characters out of 3139054
- 358704 words of memory out of 3000000
- 18122 multiletter control sequences out of 15000+200000
+ 14731 strings out of 493323
+ 270599 string characters out of 3139054
+ 364704 words of memory out of 3000000
+ 18131 multiletter control sequences out of 15000+200000
  546855 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,42p,10398b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on Project.pdf (13 pages, 473261 bytes).
+ 44i,9n,42p,10398b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base
+/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Project.pdf (14 pages, 476925 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

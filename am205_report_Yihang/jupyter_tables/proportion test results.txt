@@ -1,0 +1,10 @@
+\begin{tabular}{lrrr}
+\toprule
+{} &  Crypto &  Energy &  Basket \\
+\midrule
+Components &   3.000 &   2.000 &   1.000 \\
+\$z\$        &   2.394 &   2.777 &  -0.655 \\
+\$p\$-value  &   0.008 &   0.003 &   0.744 \\
+\$\textbackslashsigma\textasciicircum2\$ &   0.710 &   0.795 &   0.714 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Principal Components Analysis}{3}
+\contentsline {subsection}{\numberline {2.1}(a) Motivation}{3}
+\contentsline {subsection}{\numberline {2.2}(b) Mathematics of Principal Components}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Singular Value Decomposition (SVD)}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Principal component analysis (PCA) by SVD}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Finding the components}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Contribution of an observation to a component}{6}
+\contentsline {section}{\numberline {3}Jacobi eigenvalue algorithm}{7}
+\contentsline {section}{\numberline {4}Implementation}{12}
+\contentsline {subsection}{\numberline {4.1}(a) Data}{12}
+\contentsline {subsection}{\numberline {4.2}(b) Computing eigenvectors and corresponding eigenvalues}{13}
+\contentsline {subsection}{\numberline {4.3}(c) Sorting Eigenpairs and Explained Variance}{14}
+\contentsline {subsection}{\numberline {4.4}(d) Component Loadings}{15}
+\contentsline {section}{\numberline {5}Do Cryptocurrencies Move in a Parallel Manner?}{19}
+\contentsline {subsection}{\numberline {5.1}(a) Existing Literature}{20}
+\contentsline {subsection}{\numberline {5.2}(b) Proportion test}{20}
+\contentsline {subsection}{\numberline {5.3}(c) Implications}{21}
+\contentsline {subsection}{\numberline {5.4}(d) Inter-temporal consistency of covariance matrix}{22}

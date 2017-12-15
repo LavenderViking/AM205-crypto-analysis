@@ -133,7 +133,10 @@
 % http://www.aip.de/groups/soe/local/numres/bookcpdf/c11-1.pdf
 \section*{1}
 \subsection*{Jacobi method}
-In order to find eigenvalues and eigenvectors of the covariance matrix, A, we use the Jacobi method. The method finds the largest element below the diagonal in the matrix at location $(i,j)$ and simulates a rotation with A as follows:
+In order to find eigenvalues and eigenvectors of the covariance matrix, A, we use the Jacobi method. The method works by finding the largest non-diagonal element at location $(i,j)$ and makes it zero by doing a plane rotation on rows and columns $i$ and $j$. The Jacobi method is quite efficient with quadratic convergence and can be parallelized easily.  \\
+
+
+The rotation for matrix A works as follows:
 \begin{equation}
      A' = P_{i,j,\theta}^T \cdot A \cdot P_{i,j,\theta}  
 \end{equation}
@@ -151,7 +154,7 @@ P(i,j,\theta) =
               \vdots &  & \vdots &  & \vdots & \ddots  & \vdots \\
                    0 & \cdots & 0 & \cdots & 0 & \cdots & 1 \\
 \end{bmatrix}
-\end{equation}
+\end{equation}\\
 
 This matrix has ones on the diagonal except where $c=cos(\theta)$ at locations (i,i) and (j,j). All other elements are 0 except $s=sin(\theta)$ at locations (i,j) and (j,i).\\
 
@@ -177,7 +180,7 @@ P_{i,j,\theta} =
 \end{bmatrix}
 \end{equation}
 
-where the notation $A_{ij}$ denotes element at location $(i,j)$ in matrix A.
+where the notation $A_{ij}$ denotes element at location $(i,j)$ in matrix A.\\
 
 
 Now we will find $c, s$ and $\theta$ so that the matrix multiplication nullifies the largest element. In order for P to satisfy eq. 1 we expand the matrix multiplication as follows with $c_{ii}=c_{jj}=c$ and $s_{ji}=s_{ij}=s$:\\
@@ -284,6 +287,14 @@ Now we know how to set these variables for the rotations to work and we need to 
   \item Change values on rows and columns i and j except (i,i) and (j,j)
 \end{enumerate}
 
+The following diagram shows which values are modified during the rotation:
+\begin{center}
+\includegraphics[scale=0.5]{Matrix.png}
+\end{center}
+
+We define a tolerance $tol=10^{-9}$ and perform rotations until the largest non-diagonal element is less than the tolerance. Since the matrix is symmetric we will perform rotations on the upper triangle of the matrix until it has converged.\\
+
+
 For scenario i) we simply set the value of $A_{ij}'$ as 0. However, for scenario ii) we will look at the top left and bottom right elements in eq. 4 to gather equations to set the diagonal elements $A_{ii}'$ and $A_{jj}'$ . We have:
 \begin{equation}
 A_{ii}' = c^2 \cdot A_{ii} - 2cs\cdot A_{ij} + s^2\cdot A_{jj}
@@ -294,7 +305,6 @@ From eq. 5 (because $A_{ij}'=0$) we can isolate $A_{jj}$ as\\
 A_{jj} = A_{ii} - A_{ij}\frac{s^2-c^2}{cs}
 \end{equation}
 and since $c^2+s^2=1$ we simplify eq 14. as:
-
 \begin{equation}
 \begin{split}
 A_{ii}' &= c^2 \cdot A_{ii} - 2cs\cdot A_{ij} + s^2\cdot A_{jj}\\
@@ -338,6 +348,8 @@ where
 \tau = \frac{s}{1+c}
 \end{equation}
 
+which has less roundoff error than eq. 18.\\
+
 Similarly we have
 \begin{equation}
 A_{rj}' = A_{rj}  + s \left(A_{ri} - \tau A_{rj} \right) 
@@ -361,6 +373,7 @@ $A_{rj}' = A_{rj}  + s \left(A_{ri} - \tau A_{rj} \right)$   \\
 
 where
 \[ s=t\cdot c, \hspace{5mm} t = \frac{sign(\theta)}{|\theta|+ \sqrt{1+\theta^2}}, \hspace{5mm} \tau = \frac{s}{1+c}, \hspace{5mm} \theta = \frac{A_{ii}-A_{jj}}{2A_{ij}}  \]
+
 
 
 

@@ -12,8 +12,3 @@
 \contentsline {subsection}{\numberline {4.2}(b) Computing eigenvectors and corresponding eigenvalues}{13}
 \contentsline {subsection}{\numberline {4.3}(c) Sorting Eigenpairs and Explained Variance}{14}
 \contentsline {subsection}{\numberline {4.4}(d) Component Loadings}{15}
-\contentsline {section}{\numberline {5}Do Cryptocurrencies Move in a Parallel Manner?}{19}
-\contentsline {subsection}{\numberline {5.1}(a) Existing Literature}{20}
-\contentsline {subsection}{\numberline {5.2}(b) Proportion test}{20}
-\contentsline {subsection}{\numberline {5.3}(c) Implications}{21}
-\contentsline {subsection}{\numberline {5.4}(d) Inter-temporal consistency of covariance matrix}{22}

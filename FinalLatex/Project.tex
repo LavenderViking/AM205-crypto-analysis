@@ -707,56 +707,138 @@ nem - rip & 0.630 -$4.111e^{-89}$ & 0.233 $8.714e^{-23}$\\
 As we can see, indeed, a low degree in linear relationship is confirmed by $R^2 \leq 0.9$ at $\tau \leq 0.75$ for all of them.
 \bigbreak
 
-The purpose of this section was to elucidate how PCA can be conducted on a financial time series like the universe of cryptocurrencies that are the focus of this paper. We have shown what the eigenvectors, components and loadings look like. Yet, we have not provided any point of reference in which to contextualize these results. This will be done in the next section, where we aim to answer the question of whether cryptocurrencies move in a parallel manner. To answer such a question, one needs to define what return patterns would justify being considered "parallel.". To do this, we will employ statistical tests done in other PCA studies on financial time series data and provide a point of reference to help compare and contrast the results of PCA on cryptocurrencies against another asset class.
+The purpose of this section was to elucidate how PCA can be conducted on a financial time series like the universe of cryptocurrencies that are the focus of this paper. We have shown what the eigenvectors, components and loadings look like. Yet, we have not provided any point of reference against which to contextualize these results. This will be done in the next section, where we aim to answer the question of whether cryptocurrencies move in a parallel manner. To answer such a question, one needs to define what return patterns would justify being considered "parallel.". To do this, we will employ statistical tests done in other PCA studies on financial time series data and provide a point of reference to help compare and contrast the results of PCA on cryptocurrencies against another asset class.
 
-\section{Do Cryptocurrencies Move in a Parallel Manner?}
+\section*{Do Cryptocurrencies Move in a Parallel Manner?}
 
 On November 23, 2017, Fortune magazine ran the story titled "Ethereum Price Hits New High as Billionaire Predicts 25\% Surge In the Next Month." Several articles like this appear daily for seemingly each cryptocurrency, and each touts the purported benefits of its subject coin's features over the rest. This all alludes to a question common in the investment world for all groupings of assets. If Ethereum does well in a given month or year, is it because \textit{Ethereum} is special in relation to its coin colleagues or is it because cryptocurrencies \textit{as a whole} did well? In more statistical words, how much of the variation in individual cryptocurrencies could be described by variation in the universe of cryptocurrencies as a whole? And relatedly, is it useful to aggregate cryptocurrencies into an "asset class" or grouping? Before answering this ourselves, we review prior related studies on the matter.
-\subsection{(a) Existing Literature}
+\subsection*{Existing Literature}
 Broadie (2012) conducts PCA on the price returns of assets that are generally accepted to rise and fall in a parallel fashion as a result of changes in prevailing and expected future interest rates: on-the-run Treasury securities of varying maturities. He finds that not only does the first principal component account for an overwhelming majority of the variation (95\%), but also that the loadings of the first component are near-equal with respect to each individual Treasury security. Of course, these findings are not surprising given that the most significant risk to the price of Treasury securities, i.e., cause for variation in their price returns, is a change in the interest rate curve the effect it has on the discounting of cash flows. Unlike with Treasuries, the causes for variation in the return on equities are arguably more nuanced. Feeney and Hester (1967), in one of the first studies of its kind, conduct PCA on the rates of return of the 30 Dow Jones industrial (DJI) stocks over a 50 quarter period and find that the first component accounts for 41\% of the variance (the second component accounts for 9\%) and loads positively on each of the 30 stocks. They conclude that the returns of individual stocks are "dominated by the tone of the market." Borrowing their terminology, we can rephrase the question addressed by this section: is there a significant "tone of the market" for cryptocurrencies?
+\subsection*{Proportion test}
+To answer these questions, we employ a rough test similar to the one Feeney and Hester (1967) use to determine whether it is useful to aggregate stocks into industries. If such an aggregation were useful, they postulate that we would expect stocks in the same industry to enter different components of the market with similar weights, i.e., for the stocks to have similar correlations to different components of market returns. Similarly, we aim to discover whether the cryptocurrencies enter the components of the cryptocurrency market returns with similar weights. We conduct a proportions test on a null hypothesis that the correlations of two cryptocurrencies with a component (i.e., their loadings with respect that component) will be of the same sign with a probability of 0.5 (with a one-sided right-tail rejection region). Since we will be limiting our analysis to the number of components that it takes to explain at least 90\% of the variation in cryptocurrency returns (5), the test is performed on the pooled sum of the 105 pairwise comparisons at a 5\% significance level (seven cryptocurrencies in pairs of two across three components: $\choose{7}{2} \times 5$. Like Feeney and Hester (1967), we will assume the signs are binomially distributed in order to use this test.
 \bigbreak
-To answer these questions, we first employ a test similar to the one used by Feeney and Hester (1967) to determine whether it is useful to aggregate stocks into industries. If it were useful, we would expect assets in the same industry to enter different components of the market with similar weights. We conduct proportion tests, using a null hypothesis that the correlations of two cryptocurrencies with a component (i.e., their loadings with respect that component) will be of the same sign with a probability of 0.5, with a two-sided alternative hypothesis that the probability is not equal to 0.5. Rejecting this hypothesis would imply that an investor could reduce the risk in their portfolio by spreading out their exposure to cryptocurrencies among multiple cryptocurrencies, just as one might spread out their exposure to equities, as an asset class, among many stocks. Like Feeney and Hester (1967), we will assume the signs are binomially distributed.
-\subsection{(b) Proportion test}
-Using the number of components that it takes to explain more than 70\% of the variation (3) for the cryptocurrencies, we find that $z=2.39$, which is statistically significant at the 5\% level. Therefore, we reject the null hypothesis and conclude that investors \textit{could} reduce their risk in their cryptocurrency portfolio by spreading out their exposure among multiple cryptocurrencies.
+In other words, accepting the null hypothesis signifies that the likelihood of any two assets having correlation coefficients of the same sign with the various components is roughly random (a 50\% chance). With the alternative hypothesis, the more frequently a pair of cryptocurrencies have correlation coefficients of the same sign with the various components, the more justified we should feel in conceptually aggregating cryptocurrencies into one investment class (hence the right-tailed rejection region). Rejecting this hypothesis would imply that an investor could reduce the risk in their portfolio by spreading out their exposure to cryptocurrencies among multiple currencies, just as one might spread out their exposure to equities among many stocks. The test yields a $z$-statistic of 1.659, which is statistically significant at the 5\% level. Consequently, we reject the null hypothesis and conclude that investing in more than one currency would provide no advantage from the perspective of building a diversified portfolio to reduce overall variance (unless, perhaps, you were to "short" one or more of the other currencies). The results of this test lead us to believe with more conviction that we are justified in aggregating cryptocurrencies into one investment class, similar to an industry grouping in equities.
 \bigbreak
-As a reference point, we compare the results of the proportions test on the cryptocurrencies to the results we would get by applying the same test on a different set of assets. As a comparison, we chose the top seven holdings of the Energy Select Sector SPDR® Fund (Bloomberg Ticker: XLE), which "seeks to provide an effective representation of the energy sector of the S\&P 500 Index."  Discourse around the energy sector often implies that the stocks are highly correlated with one another, with banks such as Goldman Sachs and JP Morgan often making sector-wide recommendation calls (i.e., buy or sell the "energy stocks") depending on the tides of oil prices. We find that $z=1.89$, which is not statistically significant at the 5\% level. Therefore, we accept the null hypothesis and conclude that investors could not as effectively reduce their risk in their energy holdings by spreading out their exposure among multiple energy stocks. In short, the pundits appear to be onto something in implying that the energy stocks tend to move in tandem with one another to a strong degree.
+Although this was a rough test, we elucidate the results by providing two points of reference. We conduct the same proportions test that we did on the cryptocurrencies to two other sets of seven assets over the same time period. The first set consists of the top seven holdings of the Energy Select Sector SPDR® Fund (Bloomberg Ticker: XLE), which "seeks to provide an effective representation of the energy sector of the S\&P 500 Index." The energy sector is often described as one in which the stocks are highly correlated with one another, with banks such as Goldman Sachs and JP Morgan often making sector-wide recommendation calls (i.e., buy or sell the "energy stocks") depending on the tides of oil prices. The second set of seven assets was selected with the deliberate intent of including not only stocks of many industries but exchange-traded funds representing various industries as well. We'll refer to this set as the "basket." Tables \ref{table:6} and \ref{table:7} provide more details on the contents of both sets of assets as well as their loading results. We performed the test on each of these sets with a number of components equal to the number required to account for at least 90\% of the variance and compare the results in table \ref{table:8}, where $\sigma^2$ refers to the variation accounted for by the number of components used. Given the $p$-values of both tests are above 5\%, we accept the null hypothesis for both the energy and the basket groups.
 
-\subsection{(c) Implications}
-
-If the price returns of cryptocurrencies were highly correlated, then investing in more than one cryptocurrency would provide no advantage from the perspective of building a diversified portfolio to reduce overall variance (unless, perhaps, you were to “short” one or more of the other cryptocurrencies). However, the proportions test performed above confirmed that cryptocurrencies are not highly correlated. To address how this information could be used by an investor, we revisit the loadings of the components on the different cryptocurrencies,
-
-\begin{table}[H]
-\begin{tabular}{lrrrrrrr}
-	\toprule
-	{} &    rip &    btc &    eth &    ltc &    mon &    nem &   dash \\
-	component &        &        &        &        &        &        &        \\
-	\midrule
-	1         &  0.844 &  0.544 &  0.583 &  0.742 &  0.224 &  0.793 &  0.284 \\
-	2         & -0.278 & -0.176 &  0.596 & -0.363 &  0.383 & -0.074 &  0.793 \\
-	3         &  0.102 & -0.296 &  0.198 &  0.063 & -0.853 &  0.036 &  0.266 \\
-	4         & -0.250 &  0.760 &  0.006 & -0.198 & -0.273 & -0.039 &  0.114 \\
-	5         &  0.011 &  0.071 & -0.171 &  0.459 &  0.042 & -0.481 &  0.293 \\
-	6         & -0.009 & -0.043 & -0.485 & -0.059 &  0.018 &  0.321 &  0.346 \\
-	7         & -0.373 & -0.044 &  0.058 &  0.250 & -0.006 &  0.171 & -0.051 \\
-	\bottomrule
-\end{tabular}
-\caption{Component loadings for the crypto currencies}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cccccccc}
+		\toprule
+		\head{Principal Component} & \head{AAPL} & \head{GLD} & \head{HYG} &      \head{X} & \head{GE} & \head{M} & \head{MOS} \\
+		\midrule
+		1         &  0.825 &  0.809 & -0.459 & -0.450 & -1.074 & -0.135 &  0.227 \\
+		2         &  0.057 & -0.421 & -0.185 &  0.572 & -0.486 &  0.091 & -0.193 \\
+		3         &  0.017 & -0.069 &  0.017 & -0.193 & -0.036 & -0.107 & -0.393 \\
+		4         & -0.207 &  0.208 & -0.024 &  0.094 & -0.050 & -0.000 & -0.088 \\
+		5         &  0.086 &  0.055 &  0.122 &  0.072 &  0.017 &  0.005 & -0.039 \\
+		6         & -0.046 & -0.026 &  0.081 & -0.024 & -0.066 & -0.049 &  0.037 \\
+		7         & -0.006 & -0.002 &  0.013 & -0.017 & -0.013 &  0.052 & -0.004 \\
+		\bottomrule
+	\end{tabular}
+	\caption{PCA loadings for diverse mix of stocks and exchange-traded funds: Apple Inc. (AAPL), SPDR Gold Shares ETF (GLD),  iShares iBoxx \$ High Yid Corp Bond ETF (HYG), United States Steel Corporation (X), General Electric (GE), Macy's Inc (M), Mosaic Co (MOS) }
+	\label{table:5}
 \end{table}
 
-A risk-averse investor who wanted to invest in cryptocurrencies may want to purchase exposure to dash, nom, and ltc. There is a decent amount of flexibility, but the point of the exercise is to purchase uncorrelated variation, which helps reduce portfolio variance (Feeney and Hester, 1967). What such a risk-averse investor would likely not want to do, for example, is invest in only rip and ltc, whose loadings on the first three components all share the same sign.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cccccccc}
+		\toprule
+		\head{Principal Component} & \head{COP} & \head{CVX} & \head{EOG} &      \head{OXY} & \head{XOM} & \head{SLB} & \head{PSX} \\
+		\midrule
+		1         & -0.996 & -0.959 & -0.886 & -0.861 & -0.541 & -0.812 & -0.860 \\
+		2         & -0.672 & -0.035 & -0.092 &  0.383 & -0.269 &  0.226 &  0.483 \\
+		3         &  0.146 &  0.353 & -0.351 & -0.163 & -0.131 & -0.366 &  0.390 \\
+		4         &  0.226 & -0.043 &  0.108 &  0.126 & -0.577 &  0.000 & -0.089 \\
+		5         & -0.013 & -0.142 &  0.208 &  0.170 &  0.069 & -0.355 &  0.081 \\
+		6         &  0.143 & -0.141 & -0.282 &  0.255 &  0.075 &  0.015 & -0.034 \\
+		7         & -0.100 &  0.234 & -0.017 &  0.144 &  0.003 & -0.076 & -0.201 \\
+		\bottomrule
+	\end{tabular}
+	\caption{PCA loadings for top seven holdings of the Energy Select Sector SPDR® Fund: ConocoPhillips (COP), Chevron Corporation (CVX), EOG Resources Inc (EOG), Occidental Petroleum Corporation (OXY), Exxon Mobil Corporation (XOM), Schlumberger Limited. (SLB), Phillips 66 (PSX)}
+	\label{table:6}
+\end{table}
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{lccc}
+		\toprule
+		{} &  \head{Crypto} &  \head{Energy} &  \head{Basket} \\
+		\midrule
+		Components &   5 &   4 &   6 \\
+		$z$        &   1.659 &   1.309 &   1.247 \\
+		$p$-value  &   0.049 &   0.095 &   0.106 \\
+		$\sigma^2$ &   0.900 &   0.928 &   0.954 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Results of proportions test on three sets of assets}
+	\label{table:7}
+\end{table}
+
+\subsection*{Implications and limitations}
+
+We have demonstrated that the likelihood of any pair of cryptocurrencies having similar-signed loadings is more statistically significant than it is for any pair of equities in the energy or basket subsets. Given this implies cryptocurrencies have a strong comovement pattern, it signifies that investors have relatively less to gain by spreading their exposure to cryptocurrencies among multiple currencies than they would by, for example, spreading their exposure to the basket of equities across multiple stocks. If we look at the loadings for the diverse mix of stocks and ETFs in \label{table:5}, one can see how, for example, an investor could capture uncorrelated variation by purchasing AAPL and GE stock. On the first component, AAPL's loading (0.825) is nearly opposite to that of GE (-1.074), with similar results on the second component (AAPL with 0.057 vs. GE with -0.486). The pair of GLD and X also demonstrate this effect. By choosing these "attractive" pairs, an investor could eliminate much of the variance represented by the second component from their portfolio. We cannot find similarly attractive pairings in the cryptocurrency loadings matrix given their high level of comovement.
+\bigbreak
+In this section, we have implicitly assumed that the universe of investment assets consisted solely of the set of assets for which we performed each respective proportions test. This would be an unlikely reality for most investors, at least those upon which modern portfolio theory is based. We limited the universe in this way in order to easily tie the analysis into the prior discussions on the eigendecomposition of the covariance matrix of returns for a subset of assets. In reality, however, investors in cryptocurrencies will likely hold other assets in their portfolio. In such a situation, the covariance matrix to be studied would be larger and the loadings different. However, many of the same inter-currency dynamics would hold. It is also worth mentioning that the results for the energy and basket stock groups would look significantly different if we were to use a longer time frame. For the above proportions test, we narrowed the dataset of returns for these two asset groups to the same time frame we used for cryptocurrencies. If instead, for example, we were to go back to 2012, we would reject the null hypothesis for the energy stocks and we would accept the null hypothesis for the basket stocks (with an even higher $p$-value, i.e., less significant association in loadings). This would lend more credibility to the suggestion that it is helpful to treat energy stocks as an industry grouping.
+
+\subsection*{Inter-temporal consistency of covariance matrix}
+
+Of course, this analysis will be relevant in future years only if the covariance matrix for cryptocurrency returns remains relatively unchanged over time. It may be the case that cryptocurrencies that are highly correlated with each other in recent history may become less correlated in the future, raising the scepter of a diversification benefit to purchasing multiple cryptocurrencies. Although we cannot look into the future, we can investigate the inter-temporal consistency of the covariance matrix over the available time frame. To do this, we use a 90-sample time frame of asset returns to predict the loadings with respect to the first component in the next 90-sample period. The steps can be summarized as follows:
+
+
+\begin{enumerate}
+	\item Sample 90 sequential rows of unstandardized rolling-monthly returns. For the first iteration, this would give us a time series from September 6, 2015 to December 4, 2015. Standardize the returns for each cryptocurrency as we did in previous analyses.
+	\item Sample 90 sequential rows of unstandardized rolling-monthly returns beginning after the first sample. For the first iteration, this would give us a time series from December 5, 2015 to March 2, 2016. Standardize these returns for each cryptocurrency as we did in the first step.
+	\item Compute the PCA loadings for both the first and second time series.
+	\item Fit an ordinary least squares (OLS) regression model using the loadings with respect to the first component from the first time series (and an intercept dummy variable of 1) to predict the loadings with respect to the first component from the second time series.
+	\item Repeat steps 1-3 for the rest of the available dataset moving in 10-row increments. For example, for the second iteration, the first time series spans September 16, 2015 to December 14, 2015.
+\end{enumerate}
+
+If our covariance matrix were consistent between time periods, we would expect the loadings from the first time series to have some predictive utility in forecasting the loadings from the second time series. For cryptocurrencies, this turns out to not be the case. In figures \ref{fig:crypto_R2} and \ref{fig:crypto_F} we see how the $R^2$ and probability of the $F$-statistic ($Pr(F)$) values, respectively, are not only very weak but also vary dramatically.
 
 \bigbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{crypto_R2_90D.png}
+	\caption{$R^2$ for OLS predicting loadings in future period with 90-sample time series on cryptocurrencies}
+	\label{fig:crypto_R2}
+\end{figure}
+\bigbreak
 
-Of course, this analysis will be useful in future years only if the covariance matrix remains relatively unchanged over time. It may be the case that cryptocurrencies that are relatively uncorrelated with each other in recent history may become more correlated in the future, eliminating the purported diversification benefit believed to exist today. Although we cannot look into the future, we can investigate the inter-temporal consistency of the covariance matrix by splitting the recent history we have available into two samples.
+\bigbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{crypto_F_90D.png}
+	\caption{$Pr(F)$ for OLS predicting loadings in future period with 90-sample time series on cryptocurrencies}
+	\label{fig:crypto_F}
+\end{figure}
+\bigbreak
 
-\subsection{(d) Inter-temporal consistency of covariance matrix}
+As a reference point, we perform the same exercise on the energy stocks from the prior section and show the results in figures \ref{fig:xle_R2} and \ref{fig:xle_F}.
 
-The proportion of variance is significantly higher in the second time period. Building a regression model to forecast the loadings in the second time period based on the loadings from the first time period is unsuccessful.
+\bigbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{xle_R2_90D.png}
+	\caption{$R^2$ for OLS predicting loadings in future period with 90-sample time series on top holdings in XLE}
+	\label{fig:xle_R2}
+\end{figure}
+\bigbreak
 
-Unfortunately, then, any portfolio considerations formed should be utilized with caution given the changing nature of the covariance matrix.
+\bigbreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.7]{xle_F_90D.png}
+	\caption{$Pr(F)$ for OLS predicting loadings in future period with 90-sample time series on top holdings in XLE}
+	\label{fig:xle_F}
+\end{figure}
+\bigbreak
 
-[to-do next: try month-to-month samples]
 
+With the energy stocks, not only are the $R^2$ values generally higher, but the fact that all of the $Pr(F)$ values fall below 0.0011 demonstrates that the relationship discovered through our models is highly statistically significant. We conclude that the inter-temporal covariance matrix is not stable for cryptocurrencies.
+
+\section{Conclusion}
 
 \end{document}
 

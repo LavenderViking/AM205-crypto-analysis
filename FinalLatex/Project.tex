@@ -724,13 +724,13 @@ Although this was a rough test, we elucidate the results by providing two points
 		\toprule
 		\head{Principal Component} & \head{AAPL} & \head{GLD} & \head{HYG} &      \head{X} & \head{GE} & \head{M} & \head{MOS} \\
 		\midrule
-		1         &  0.825 &  0.809 & -0.459 & -0.450 & -1.074 & -0.135 &  0.227 \\
-		2         &  0.057 & -0.421 & -0.185 &  0.572 & -0.486 &  0.091 & -0.193 \\
-		3         &  0.017 & -0.069 &  0.017 & -0.193 & -0.036 & -0.107 & -0.393 \\
-		4         & -0.207 &  0.208 & -0.024 &  0.094 & -0.050 & -0.000 & -0.088 \\
-		5         &  0.086 &  0.055 &  0.122 &  0.072 &  0.017 &  0.005 & -0.039 \\
-		6         & -0.046 & -0.026 &  0.081 & -0.024 & -0.066 & -0.049 &  0.037 \\
-		7         & -0.006 & -0.002 &  0.013 & -0.017 & -0.013 &  0.052 & -0.004 \\
+		1         & -0.349 & -0.135 & -0.694 & -0.861 & -0.491 & -0.599 & -0.829 \\
+		2         & -0.776 &  0.512 & -0.346 &  0.132 &  0.024 &  0.413 &  0.084 \\
+		3         & -0.269 & -0.733 & -0.366 &  0.087 &  0.533 &  0.015 &  0.122 \\
+		4         & -0.113 &  0.369 &  0.159 & -0.123 &  0.589 & -0.534 &  0.018 \\
+		5         & -0.385 & -0.183 &  0.269 &  0.039 & -0.345 & -0.341 &  0.377 \\
+		6         &  0.183 &  0.114 & -0.396 &  0.297 & -0.103 & -0.254 &  0.171 \\
+		7         &  0.108 &  0.048 & -0.118 & -0.362 &  0.016 &  0.088 &  0.349 \\
 		\bottomrule
 	\end{tabular}
 	\caption{PCA loadings for diverse mix of stocks and exchange-traded funds: Apple Inc. (AAPL), SPDR Gold Shares ETF (GLD),  iShares iBoxx \$ High Yid Corp Bond ETF (HYG), United States Steel Corporation (X), General Electric (GE), Macy's Inc (M), Mosaic Co (MOS) }
@@ -743,13 +743,13 @@ Although this was a rough test, we elucidate the results by providing two points
 		\toprule
 		\head{Principal Component} & \head{COP} & \head{CVX} & \head{EOG} &      \head{OXY} & \head{XOM} & \head{SLB} & \head{PSX} \\
 		\midrule
-		1         & -0.996 & -0.959 & -0.886 & -0.861 & -0.541 & -0.812 & -0.860 \\
-		2         & -0.672 & -0.035 & -0.092 &  0.383 & -0.269 &  0.226 &  0.483 \\
-		3         &  0.146 &  0.353 & -0.351 & -0.163 & -0.131 & -0.366 &  0.390 \\
-		4         &  0.226 & -0.043 &  0.108 &  0.126 & -0.577 &  0.000 & -0.089 \\
-		5         & -0.013 & -0.142 &  0.208 &  0.170 &  0.069 & -0.355 &  0.081 \\
-		6         &  0.143 & -0.141 & -0.282 &  0.255 &  0.075 &  0.015 & -0.034 \\
-		7         & -0.100 &  0.234 & -0.017 &  0.144 &  0.003 & -0.076 & -0.201 \\
+		1         &  0.772 &  0.886 &  0.870 &  0.854 &  0.663 &  0.841 &  0.793 \\
+		2         &  0.426 &  0.016 &  0.096 & -0.367 &  0.559 & -0.186 & -0.413 \\
+		3         & -0.240 & -0.374 &  0.261 &  0.159 &  0.142 &  0.370 & -0.318 \\
+		4         & -0.359 &  0.007 & -0.241 & -0.016 &  0.478 & -0.021 &  0.245 \\
+		5         & -0.022 & -0.136 &  0.205 &  0.200 &  0.048 & -0.347 &  0.062 \\
+		6         &  0.159 & -0.089 & -0.263 &  0.254 &  0.037 &  0.007 & -0.079 \\
+		7         &  0.123 & -0.225 & -0.001 & -0.102 &  0.000 &  0.055 &  0.184 \\
 		\bottomrule
 	\end{tabular}
 	\caption{PCA loadings for top seven holdings of the Energy Select Sector SPDR® Fund: ConocoPhillips (COP), Chevron Corporation (CVX), EOG Resources Inc (EOG), Occidental Petroleum Corporation (OXY), Exxon Mobil Corporation (XOM), Schlumberger Limited. (SLB), Phillips 66 (PSX)}
@@ -763,10 +763,10 @@ Although this was a rough test, we elucidate the results by providing two points
 		\toprule
 		{} &  \head{Crypto} &  \head{Energy} &  \head{Basket} \\
 		\midrule
-		Components &   5 &   4 &   6 \\
-		$z$        &   1.659 &   1.309 &   1.247 \\
-		$p$-value  &   0.049 &   0.095 &   0.106 \\
-		$\sigma^2$ &   0.900 &   0.928 &   0.954 \\
+		Components &   5 &   4 &   5 \\
+		$z$        &   1.659 &   1.309 &   1.269 \\
+		$p$-value  &   0.049 &   0.095 &   0.102 \\
+		$\sigma^2$ &   0.900 &   0.927 &   0.902 \\
 		\bottomrule
 	\end{tabular}
 	\caption{Results of proportions test on three sets of assets}
@@ -775,7 +775,7 @@ Although this was a rough test, we elucidate the results by providing two points
 
 \subsection{Implications and limitations}
 
-We have demonstrated that the likelihood of any pair of cryptocurrencies having similar-signed loadings is more statistically significant than it is for any pair of equities in the energy or basket subsets. Given this implies cryptocurrencies have a strong comovement pattern, it signifies that investors have relatively less to gain by spreading their exposure to cryptocurrencies among multiple currencies than they would by, for example, spreading their exposure to the basket of equities across multiple stocks. If we look at the loadings for the diverse mix of stocks and ETFs in \ref{table:loadings_bsk}, one can see how, for example, an investor could capture uncorrelated variation by purchasing AAPL and GE stock. On the first component, AAPL's loading (0.825) is nearly opposite to that of GE (-1.074), with similar results on the second component (AAPL with 0.057 vs. GE with -0.486). The pair of GLD and X also demonstrate this effect. By choosing these ``attractive" pairs, an investor could eliminate much of the variance represented by the second component from their portfolio. We cannot find similarly attractive pairings in the cryptocurrency loadings matrix given their high level of comovement.
+We have demonstrated that the likelihood of any pair of cryptocurrencies having similar-signed loadings is more statistically significant than it is for any pair of equities in the energy or basket subsets. Given this implies cryptocurrencies have a strong comovement pattern, it signifies that investors have relatively less to gain by spreading their exposure to cryptocurrencies among multiple currencies than they would by, for example, spreading their exposure to the basket of equities across multiple stocks. If we look at the loadings for the diverse mix of stocks and ETFs in \ref{table:loadings_bsk}, one can see how, for example, an investor could capture uncorrelated variation by purchasing AAPL and X stock. On the first component, AAPL's loading (-0.349) is of quite different magnitude than that of X (-0.861), with similar findings on the second component (AAPL with -0.776 vs. X with 0.132). The pair of GLD and HYG also demonstrate this effect. By choosing these ``attractive" pairs, an investor could eliminate much of the variance represented by the second component from their portfolio. We cannot find similarly attractive pairings in the cryptocurrency loadings matrix given their high level of comovement.
 \bigbreak
 In this section, we have implicitly assumed that the universe of investment assets consisted solely of the set of assets for which we performed each respective proportions test. This would be an unlikely reality for most investors, at least those upon which modern portfolio theory is based. We limited the universe in this way in order to easily tie the analysis into the prior discussions on the eigendecomposition of the covariance matrix of returns for a subset of assets. In reality, however, investors in cryptocurrencies will likely hold other assets in their portfolio. In such a situation, the covariance matrix to be studied would be larger and the loadings different. However, many of the same inter-currency dynamics would hold. It is also worth mentioning that the results for the energy and basket stock groups would look significantly different if we were to use a longer time frame. For the above proportions test, we narrowed the dataset of returns for these two asset groups to the same time frame we used for cryptocurrencies. If instead, for example, we were to go back to 2012, we would reject the null hypothesis for the energy stocks and we would accept the null hypothesis for the basket stocks (with an even higher $p$-value, i.e., less significant association in loadings). This would lend more credibility to the suggestion that it is helpful to treat energy stocks as an industry grouping.
 
@@ -855,6 +855,8 @@ Baker, Malcolm, and Jeffrey Wurgler. ``Investor Sentiment in the Stock Market." 
 Baruch, Shmuel, and Gideon Saar. ``Asset Returns and the Listing Choice of Firms." \textit{The Review of Financial Studies}, vol. 22, no. 6, 2009, pp. 2239–2274.
 \bigbreak
 Bouzoubaa, Mohamed, and Adel Osseiran. \textit{Exotic Options and Hybrids: a Guide to Structuring, Pricing and Trading}. John Wiley \& Sons, 2011.
+\bigbreak
+Broadie, Mark. ``Changes in the Treasury Yield Curve: Data Analysis, Models, and Applications." \textit{Columbia Business School}. 2012.
 \bigbreak
 Hair, Joseph F., et al. \textit{Multivariate Data Analysis}. 7th ed., Pearson Education Limited, 2010. 
 \bigbreak

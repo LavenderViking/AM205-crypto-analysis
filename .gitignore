@@ -37,6 +37,7 @@ pip-delete-this-directory.txt
 
 # JetBrains
 .idea
+.idea/
 
 # Unit test / coverage reports
 htmlcov/
